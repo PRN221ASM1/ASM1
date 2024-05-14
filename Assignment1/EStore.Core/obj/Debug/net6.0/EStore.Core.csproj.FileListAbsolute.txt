@@ -1,0 +1,14 @@
+E:\PRN221\project\Assignment1\EStore.Core\bin\Debug\net6.0\EStore.Core.deps.json
+E:\PRN221\project\Assignment1\EStore.Core\bin\Debug\net6.0\EStore.Core.runtimeconfig.json
+E:\PRN221\project\Assignment1\EStore.Core\bin\Debug\net6.0\EStore.Core.dll
+E:\PRN221\project\Assignment1\EStore.Core\bin\Debug\net6.0\EStore.Core.pdb
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.csproj.AssemblyReference.cache
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.AssemblyInfoInputs.cache
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.AssemblyInfo.cs
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.csproj.CoreCompileInputs.cache
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.dll
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\refint\EStore.Core.dll
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.pdb
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\EStore.Core.genruntimeconfig.cache
+E:\PRN221\project\Assignment1\EStore.Core\obj\Debug\net6.0\ref\EStore.Core.dll
