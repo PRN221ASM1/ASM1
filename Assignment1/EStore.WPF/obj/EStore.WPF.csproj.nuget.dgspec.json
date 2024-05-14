@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PRN221\\project\\Assignment1\\EStore.WPF\\EStore.WPF.csproj": {}
+    "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj": {}
   },
   "projects": {
-    "E:\\PRN221\\project\\Assignment1\\EStore.Core\\EStore.Core.csproj": {
+    "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PRN221\\project\\Assignment1\\EStore.Core\\EStore.Core.csproj",
+        "projectUniqueName": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
         "projectName": "EStore.Core",
-        "projectPath": "E:\\PRN221\\project\\Assignment1\\EStore.Core\\EStore.Core.csproj",
+        "projectPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
         "packagesPath": "C:\\Users\\LINH\\.nuget\\packages\\",
-        "outputPath": "E:\\PRN221\\project\\Assignment1\\EStore.Core\\obj\\",
+        "outputPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,14 +76,14 @@
         }
       }
     },
-    "E:\\PRN221\\project\\Assignment1\\EStore.WPF\\EStore.WPF.csproj": {
+    "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PRN221\\project\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+        "projectUniqueName": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
         "projectName": "EStore.WPF",
-        "projectPath": "E:\\PRN221\\project\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+        "projectPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
         "packagesPath": "C:\\Users\\LINH\\.nuget\\packages\\",
-        "outputPath": "E:\\PRN221\\project\\Assignment1\\EStore.WPF\\obj\\",
+        "outputPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,8 +100,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\PRN221\\project\\Assignment1\\EStore.Core\\EStore.Core.csproj": {
-                "projectPath": "E:\\PRN221\\project\\Assignment1\\EStore.Core\\EStore.Core.csproj"
+              "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj": {
+                "projectPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj"
               }
             }
           }

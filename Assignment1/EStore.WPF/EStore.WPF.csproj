@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Windows\" />
+    <Folder Include="Windows\Member\" />
+    <Folder Include="Windows\Order\" />
+    <Folder Include="Windows\Product\" />
   </ItemGroup>
 
   <ItemGroup>

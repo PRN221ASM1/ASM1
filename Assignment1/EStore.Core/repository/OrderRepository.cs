@@ -20,8 +20,13 @@ namespace EStore.Core.repository
         public int Add(Order order)
         {
             _context.Orders.Add(order);
-            int result = _context.SaveChanges();
-            return result;
+            _context.OrderDetails.AddRange((IEnumerable<Order>)order.OrderDetails);
+            if (order.OrderDetails.Count() != 0)
+            {
+                int result = _context.SaveChanges();
+                return result;
+            }
+            return 0;
         }
 
         public int Delete(int id)

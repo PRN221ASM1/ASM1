@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "88/erCDVwPRCUOhmLDg7Wkm0ywVALi9+6UYWbAWYZFUEYGRL/l6IhcJdv3oAjWFHVFgA/IMjWHWaa2b+5AYcGA==",
+  "dgSpecHash": "kH5lvTax7FfTd0fS9iWvt56hcDeUMo+MQAACubf+kkAtDfHmKUadnZQrOLu4u19GunIRAX1v2ROGpdN3bgwMdQ==",
   "success": true,
-  "projectFilePath": "E:\\PRN221\\project\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+  "projectFilePath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LINH\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\LINH\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

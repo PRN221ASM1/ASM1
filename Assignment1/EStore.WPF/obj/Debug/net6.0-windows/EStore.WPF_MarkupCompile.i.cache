@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\PRN221\project\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\
+E:\PRN221\project\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\
 EStore.WPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\PRN221\project\Assignment1\EStore.WPF\App.xaml
+E:\PRN221\project\ASM1\Assignment1\EStore.WPF\App.xaml
 51889101283
 
 11-1510326204
-2161294957253
+216-2040904702
 MainWindow.xaml;Pages\CategoryPage.xaml;Pages\MemberPage.xaml;Pages\OrderPage.xaml;Pages\ProductPage.xaml;
 
 True
