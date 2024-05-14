@@ -2017,11 +2017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
+      "projectUniqueName": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
       "projectName": "EStore.Core",
-      "projectPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
+      "projectPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
       "packagesPath": "C:\\Users\\LINH\\.nuget\\packages\\",
-      "outputPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\obj\\",
+      "outputPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LINH\\AppData\\Roaming\\NuGet\\NuGet.Config",

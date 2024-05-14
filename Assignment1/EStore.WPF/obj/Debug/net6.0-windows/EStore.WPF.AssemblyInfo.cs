@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EStore.WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22f9f0168f285adb4bc70ccdfe314c09cc295145")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f7df96dbf7ea9fe41d72bc581b716cb22209f50")]
 [assembly: System.Reflection.AssemblyProductAttribute("EStore.WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EStore.WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

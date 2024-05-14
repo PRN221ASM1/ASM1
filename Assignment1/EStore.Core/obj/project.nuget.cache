@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HeiISmMiInBetk5Ow6C2scOTChxFz7tQNR4p2NVUOZ8IcoyzoFEVZR5w8+ED6YY0G2+1yGNFOrcPT5moe9uyiA==",
+  "dgSpecHash": "5KyR1i2Zxw5EeZdIpa2GYGpr9C4gHJKQGBg0RMiJLQowyiPirFt7OxQe75lpfw9eKZgsOr3XJEHOTXKY4++sYg==",
   "success": true,
-  "projectFilePath": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
+  "projectFilePath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\EStore.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LINH\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\LINH\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

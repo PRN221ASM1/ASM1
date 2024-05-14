@@ -1,100 +1,100 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\PRN221\\project\\ASM1\\Assignment1\\",
+  "WorkspaceRootPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\repository\\interface\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\repository\\interface\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\repository\\interface\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\repository\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\repository\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\repository\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\model\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\model\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\model\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\pages\\categorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\categorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\categorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\connection\\estorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\connection\\estorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\connection\\estorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.core\\model\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.core\\model\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C24B720-F39C-45D0-BE3D-7B552A438DB1}|EStore.Core\\EStore.Core.csproj|solutionrelative:estore.core\\model\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\pages\\categorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\categorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\categorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\pages\\memberpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\memberpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\memberpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\pages\\memberpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\memberpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\memberpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\pages\\orderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\orderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\orderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\PRN221\\project\\Assignment1\\EStore.Core\\Migrations\\20240513164739_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -111,9 +111,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "IProductRepository.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IProductRepository.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IProductRepository.cs",
               "RelativeDocumentMoniker": "EStore.Core\\repository\\interface\\IProductRepository.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IProductRepository.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IProductRepository.cs",
               "RelativeToolTip": "EStore.Core\\repository\\interface\\IProductRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -123,9 +123,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "IOrderRepository.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IOrderRepository.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "EStore.Core\\repository\\interface\\IOrderRepository.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IOrderRepository.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\repository\\interface\\IOrderRepository.cs",
               "RelativeToolTip": "EStore.Core\\repository\\interface\\IOrderRepository.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAAA0AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -135,9 +135,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "OrderRepository.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\repository\\OrderRepository.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\repository\\OrderRepository.cs",
               "RelativeDocumentMoniker": "EStore.Core\\repository\\OrderRepository.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\repository\\OrderRepository.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\repository\\OrderRepository.cs",
               "RelativeToolTip": "EStore.Core\\repository\\OrderRepository.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAAwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -148,9 +148,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\appsettings.json",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\appsettings.json",
               "RelativeDocumentMoniker": "EStore.WPF\\appsettings.json",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\appsettings.json",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\appsettings.json",
               "RelativeToolTip": "EStore.WPF\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -160,9 +160,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "NavigationService.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\NavigationService.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\NavigationService.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\NavigationService.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\NavigationService.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\NavigationService.cs",
               "RelativeToolTip": "EStore.WPF\\NavigationService.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAAADAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -172,9 +172,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "MemberPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\MemberPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml.cs",
               "RelativeToolTip": "EStore.WPF\\Pages\\MemberPage.xaml.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAABkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -184,9 +184,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "OrderPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\OrderPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml.cs",
               "RelativeToolTip": "EStore.WPF\\Pages\\OrderPage.xaml.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAArwBoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -196,9 +196,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "ProductPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
               "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAAAB4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -208,9 +208,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "CategoryPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\CategoryPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml.cs",
               "RelativeToolTip": "EStore.WPF\\Pages\\CategoryPage.xaml.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAAACkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -220,9 +220,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "CategoryPage.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\CategoryPage.xaml",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\CategoryPage.xaml",
               "RelativeToolTip": "EStore.WPF\\Pages\\CategoryPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-13T16:56:00.588Z"
@@ -231,9 +231,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "MemberPage.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\MemberPage.xaml",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\MemberPage.xaml",
               "RelativeToolTip": "EStore.WPF\\Pages\\MemberPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-13T16:55:58.343Z"
@@ -242,9 +242,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "ProductPage.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ProductPage.xaml",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
               "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-13T16:55:31.653Z"
@@ -253,9 +253,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "EStore.WPF\\MainWindow.xaml",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
               "RelativeToolTip": "EStore.WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-13T16:55:16.035Z"
@@ -264,9 +264,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "App.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\App.xaml",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\App.xaml",
               "RelativeDocumentMoniker": "EStore.WPF\\App.xaml",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\App.xaml",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\App.xaml",
               "RelativeToolTip": "EStore.WPF\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-13T16:53:56.018Z"
@@ -276,9 +276,9 @@
               "DocumentIndex": 22,
               "Title": "20240513164739_database.cs",
               "DocumentMoniker": "E:\\PRN221\\project\\Assignment1\\EStore.Core\\Migrations\\20240513164739_database.cs",
-              "RelativeDocumentMoniker": "..\\..\\Assignment1\\EStore.Core\\Migrations\\20240513164739_database.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Assignment1\\EStore.Core\\Migrations\\20240513164739_database.cs",
               "ToolTip": "E:\\PRN221\\project\\Assignment1\\EStore.Core\\Migrations\\20240513164739_database.cs",
-              "RelativeToolTip": "..\\..\\Assignment1\\EStore.Core\\Migrations\\20240513164739_database.cs",
+              "RelativeToolTip": "..\\..\\..\\Assignment1\\EStore.Core\\Migrations\\20240513164739_database.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T16:47:39.377Z"
@@ -287,9 +287,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Order.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Order.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Order.cs",
               "RelativeDocumentMoniker": "EStore.Core\\Model\\Order.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Order.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Order.cs",
               "RelativeToolTip": "EStore.Core\\Model\\Order.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAnwBMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -299,9 +299,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\App.xaml.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\App.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\App.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\App.xaml.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\App.xaml.cs",
               "RelativeToolTip": "EStore.WPF\\App.xaml.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAAABEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -311,9 +311,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "EStore.WPF\\MainWindow.xaml.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAAADUAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -323,9 +323,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "EStore.WPF\\MainWindow.xaml",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
               "RelativeToolTip": "EStore.WPF\\MainWindow.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -335,9 +335,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Product.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Product.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Product.cs",
               "RelativeDocumentMoniker": "EStore.Core\\Model\\Product.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Product.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Product.cs",
               "RelativeToolTip": "EStore.Core\\Model\\Product.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -347,9 +347,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "OrderDetail.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\OrderDetail.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\OrderDetail.cs",
               "RelativeDocumentMoniker": "EStore.Core\\Model\\OrderDetail.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\OrderDetail.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\OrderDetail.cs",
               "RelativeToolTip": "EStore.Core\\Model\\OrderDetail.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAYwA4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -359,9 +359,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Member.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Member.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Member.cs",
               "RelativeDocumentMoniker": "EStore.Core\\Model\\Member.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Member.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Member.cs",
               "RelativeToolTip": "EStore.Core\\Model\\Member.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -371,9 +371,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Category.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Category.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Category.cs",
               "RelativeDocumentMoniker": "EStore.Core\\Model\\Category.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\Model\\Category.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\Model\\Category.cs",
               "RelativeToolTip": "EStore.Core\\Model\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,9 +383,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "EStoreContext.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\connection\\EStoreContext.cs",
+              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\connection\\EStoreContext.cs",
               "RelativeDocumentMoniker": "EStore.Core\\connection\\EStoreContext.cs",
-              "ToolTip": "E:\\PRN221\\project\\ASM1\\Assignment1\\EStore.Core\\connection\\EStoreContext.cs",
+              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.Core\\connection\\EStoreContext.cs",
               "RelativeToolTip": "EStore.Core\\connection\\EStoreContext.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAAAEQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
