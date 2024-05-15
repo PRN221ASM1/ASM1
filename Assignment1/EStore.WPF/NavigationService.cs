@@ -1,28 +1,19 @@
-﻿using EStore.WPF.Repositories;
+﻿
 using EStore.WPF.Pages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Controls;
+using EStore.WPF.Models;
 
 namespace EStore.WPF
 {
     public class NavigationService
     {
         private readonly Dictionary<string, Page> _pages = new Dictionary<string, Page>();
-        private readonly IProductRepository _productRepository;
-        private readonly ICategoryRepository _categoryRepository;
-        private readonly IOrderRepository _orderRepository;
-        private readonly IStaffRepository _staffRepository;
-
-        public NavigationService(IProductRepository productRepository, ICategoryRepository categoryRepository, IOrderRepository orderRepository, IStaffRepository staffRepository)
+        private readonly RepositoryManager _repositoryManager;
+        private readonly Staff _staff;
+        public NavigationService(RepositoryManager repositoryManager,Staff staff)
         {
-            _productRepository = productRepository;
-            _categoryRepository = categoryRepository;
-            _orderRepository = orderRepository;
-            _staffRepository = staffRepository;
+            _repositoryManager = repositoryManager;
+            _staff = staff;
         }
 
         public Page GetPage(string name)
@@ -36,16 +27,16 @@ namespace EStore.WPF
             switch (name)
             {
                 case "Product":
-                    page = new ProductPage(_productRepository);
+                    page = new ProductPage(_repositoryManager, _staff);
                     break;
-                case "Category":
-                    page = new CategoryPage(_categoryRepository);
+                case "Report":
+                    page = new ReportPage(_repositoryManager, _staff);
                     break;
                 case "Order":
-                    page = new OrderPage(_orderRepository);
+                    page = new OrderPage(_repositoryManager, _staff);
                     break;
                 case "Staff":
-                    page = new StaffPage(_staffRepository);
+                    page = new StaffPage(_repositoryManager, _staff);
                     break;
                 default:
                     throw new ArgumentException($"Page with name '{name}' not found.");

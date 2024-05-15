@@ -34,10 +34,10 @@
                 <!-- Chia cột 0, hàng 1 -->
                 <StackPanel  Grid.Row="0" Grid.Column="1">
                     <Menu x:Name="mainMenu" Style="{DynamicResource mainMenu}" >
-                        <MenuItem Header="ProductManages" Name="Product"/>
-                        <MenuItem Header="CategoryManages"  Name="Category"/>
-                        <MenuItem Header="StaffManages"  Name="Staff"/>
-                        <MenuItem Header="OrderManages" Name="Order"/>
+                        <MenuItem Header="Product" Name="Product"/>
+                        <MenuItem Header="Staff"  Name="Staff"/>
+                        <MenuItem Header="Order" Name="Order"/>
+                        <MenuItem Header="Report" Name="Report"/>
                     </Menu>
                 </StackPanel>
                 <!-- Chia cột 0, hàng 2 -->

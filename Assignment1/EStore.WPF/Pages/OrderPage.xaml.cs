@@ -1,4 +1,5 @@
-﻿using EStore.WPF.Repositories;
+﻿using EStore.WPF.Models;
+using EStore.WPF.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,11 +22,13 @@ namespace EStore.WPF.Pages
     /// </summary>
     public partial class OrderPage : Page
     {
-        private readonly IOrderRepository _orderRepository;
-        public OrderPage(IOrderRepository orderRepository)
+        private readonly RepositoryManager _repo;
+        private readonly Staff _staff;
+        public OrderPage(RepositoryManager repo,Staff staff)
         {
             InitializeComponent();
-            _orderRepository = orderRepository;
+            _repo = repo;
+            _staff = staff;
         }
     }
 }

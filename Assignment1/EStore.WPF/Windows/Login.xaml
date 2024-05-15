@@ -1,0 +1,18 @@
+﻿<Window x:Class="EStore.WPF.Windows.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EStore.WPF.Windows"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Width="400">
+            <Label x:Name="labEmail" Content="Email" Width="200"/>
+            <TextBox x:Name="txtEmail" Width="200"></TextBox >
+            <Label x:Name="labPassword" Content="Password" Width="200"/>
+            <TextBox x:Name="txtPassword"  Width="200"></TextBox>
+            <Button x:Name="btnLoign" Width="50" Content="Login"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

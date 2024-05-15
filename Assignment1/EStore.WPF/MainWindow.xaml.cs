@@ -22,26 +22,19 @@ namespace EStore.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly MyStoreContext _context;
-        private readonly IProductRepository productRepository;
-        private readonly ICategoryRepository categoryRepository;
-        private readonly IOrderRepository orderRepository;
-        private readonly IStaffRepository staffRepository;
+        private readonly RepositoryManager repositoryManager;
         private readonly NavigationService _navigationService;
-
-        public MainWindow()
+        private readonly Staff _staff;
+        public MainWindow(Staff staff)
         {
             InitializeComponent();
+            _staff = staff;
             foreach (MenuItem item in mainMenu.Items)
             {
                 item.Click += menuItem_click;
             }
-            _context = new MyStoreContext();
-            productRepository = new ProductRepository(_context);
-            categoryRepository = new CategoryRepository(_context);
-            orderRepository = new OrderRepository(_context);
-            staffRepository = new StaffRepository(_context);
-            _navigationService = new NavigationService(productRepository, categoryRepository, orderRepository, staffRepository);
+            repositoryManager = new RepositoryManager();
+            _navigationService = new NavigationService(repositoryManager,staff);
         }
 
         public void menuItem_click(Object sender, RoutedEventArgs e)
@@ -53,9 +46,9 @@ namespace EStore.WPF
                 {
                     frameMain.Content = _navigationService.GetPage("Product");
                 }
-                else if(item.Name == "Category")
+                else if(item.Name == "Report")
                 {
-                    frameMain.Content = _navigationService.GetPage("Category");
+                    frameMain.Content = _navigationService.GetPage("Report");
                 }
                 else if (item.Name == "Order")
                 {

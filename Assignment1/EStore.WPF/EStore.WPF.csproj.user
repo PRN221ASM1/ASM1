@@ -10,24 +10,24 @@
     <Compile Update="MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\CategoryPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Pages\OrderPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\ProductPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\ReportPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\StaffPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Pages\CategoryPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\OrderPage.xaml">
@@ -36,7 +36,13 @@
     <Page Update="Pages\ProductPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\ReportPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\StaffPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
