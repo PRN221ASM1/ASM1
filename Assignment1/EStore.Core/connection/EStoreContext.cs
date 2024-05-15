@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,12 +27,14 @@ namespace EStore.Core.connection
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Member>(member =>
             {
+                member.ToTable("Members");
                 member.HasKey(member => member.MemberId);
 
             });
 
             modelBuilder.Entity<Product>(product =>
             {
+                product.ToTable("Products");
                 product.HasKey(product => product.ProductId);
                 product.HasOne(product => product.Category)
                 .WithMany(product => product.Products)
@@ -44,16 +47,17 @@ namespace EStore.Core.connection
 
             modelBuilder.Entity<Category>(category =>
             {
+                category.ToTable("Categories");
                 category.HasKey(category => category.CategoryId);
             });
 
             modelBuilder.Entity<Order>(order =>
             {
+                order.ToTable("Orders");
                 order.HasKey(order => order.OrderId);
                 order.HasOne(order => order.Member)
                 .WithMany(order => order.Orders)
                 .HasForeignKey(order => order.MemberId).IsRequired();
-
                 order.HasMany(o => o.OrderDetails)
                 .WithOne(od => od.Order)
                 .HasForeignKey(od => od.OrderId);
@@ -62,6 +66,7 @@ namespace EStore.Core.connection
 
             modelBuilder.Entity<OrderDetail>(orderDetail =>
             {
+                orderDetail.ToTable("OrderDetails");
                 orderDetail.HasKey(orderDetail => orderDetail.OrderDetailId);
             });
         }
