@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using EStore.WPF.Models;
 using EStore.WPF.Pages;
 using EStore.WPF.Repositories;
+using EStore.WPF.Windows;
 namespace EStore.WPF
 {
     /// <summary>
@@ -33,10 +34,31 @@ namespace EStore.WPF
             {
                 item.Click += menuItem_click;
             }
+            btnLogout.Click += btnLogout_lick;
             repositoryManager = new RepositoryManager();
             _navigationService = new NavigationService(repositoryManager,staff);
+            setControl();
         }
+        private void setControl()
+        {
+            foreach (MenuItem item in mainMenu.Items)
+            {
+                if (item.Name == "Staff")
+                {
+                    item.Header = $"Staff({_staff.Name})";
+                }
+            }
+            // staff
+            if (_staff.Role == 1)
+            {
 
+            }
+            // admin
+            else
+            {
+
+            }
+        }
         public void menuItem_click(Object sender, RoutedEventArgs e)
         {
             var item = (MenuItem)sender;
@@ -58,6 +80,16 @@ namespace EStore.WPF
                 {
                     frameMain.Content = _navigationService.GetPage("Staff");
                 }
+            }
+        }
+        public void btnLogout_lick(object sender,RoutedEventArgs e)
+        {
+            if (_staff != null)
+            {
+
+                Window Login = new Login();
+                Login.Show();
+                this.Close();
             }
         }
 

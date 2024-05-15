@@ -29,6 +29,20 @@ namespace EStore.WPF.Pages
             InitializeComponent();
             _repo = repo;
             _staff = staff;
+            SetControl();
+        }
+        private void SetControl()
+        {
+            if (_staff.Role == 1)
+            {
+                btnAdd.IsEnabled = false;
+                btnDelete.IsEnabled = false;
+            }
+            else if(_staff.Role ==0)
+            {
+                btnAdd.IsEnabled = true;
+                btnDelete.IsEnabled = true;
+            }
         }
     }
 }

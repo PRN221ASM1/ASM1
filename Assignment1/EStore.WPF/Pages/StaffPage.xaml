@@ -8,7 +8,42 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="StaffPage">
 
-    <Grid>
-        
+    <Grid Margin="10,10,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Width="200">
+                <Label Content="Id"></Label>
+                <TextBox x:Name="txtId"></TextBox>
+                <Label Content="Name"></Label>
+                <TextBox x:Name="txtName"></TextBox>
+                <Label Content="Password"></Label>
+                <TextBox x:Name="txtPassword"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="1" >
+                <Button x:Name="btnAdd" Content="Add" Width="50" Margin="10"></Button>
+                <Button x:Name="btnUpdate" Content="Update" Width="50" Margin="10"></Button>
+                <Button x:Name="btnDelete" Content="Delete" Width="50" Margin="10"></Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel HorizontalAlignment="Left">
+                <ListView x:Name="staffListView" Width="500">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="StafID" DisplayMemberBinding="{Binding ProductId}" Width="100"/>
+                            <GridViewColumn Header="Name" DisplayMemberBinding="{Binding CategoryId}" Width="200"/>
+                            <GridViewColumn Header="Password" DisplayMemberBinding="{Binding ProductName}" Width="200"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
