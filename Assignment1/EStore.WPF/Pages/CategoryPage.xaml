@@ -21,18 +21,36 @@
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
         <StackPanel  Grid.Row="0" Grid.Column="0">
-            <Label Content="categoryId"></Label>
-            <TextBox x:Name="categoryId" ></TextBox>
+            <Label Content="CategoryId"></Label>
+            <TextBox x:Name="textCategoryId" ></TextBox>
             <Label Content="categoryName"></Label>
-            <TextBox x:Name="categoryName"></TextBox>
-            <Button x:Name="btnSave" Content="Save" Width="50">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="White"/>
-                        <Setter Property="Margin" Value="10"/>
-                    </Style>
-                </Button.Style>
-            </Button>
+            <TextBox x:Name="textCategoryName"></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="btnAdd" Content="Add" Width="50">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Margin" Value="10"/>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="btnUpdate" Content="Update" Width="50">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Margin" Value="10"/>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="btnDelete" Content="Delete" Width="50">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Margin" Value="10"/>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Width="700">
             <ListView x:Name="categoryListView">
