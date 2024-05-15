@@ -1,6 +1,4 @@
-﻿using EStore.Core.connection;
-using EStore.Core.Model;
-using EStore.Core.repository;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using EStore.WPF.Models;
 using EStore.WPF.Pages;
+using EStore.WPF.Repositories;
 namespace EStore.WPF
 {
     /// <summary>
@@ -22,11 +22,11 @@ namespace EStore.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly EStoreContext _context;
+        private readonly MyStoreContext _context;
         private readonly IProductRepository productRepository;
         private readonly ICategoryRepository categoryRepository;
         private readonly IOrderRepository orderRepository;
-        private readonly IMemberRepository memberRepository;
+        private readonly IStaffRepository staffRepository;
         private readonly NavigationService _navigationService;
 
         public MainWindow()
@@ -36,12 +36,12 @@ namespace EStore.WPF
             {
                 item.Click += menuItem_click;
             }
-            _context = new EStoreContext();
+            _context = new MyStoreContext();
             productRepository = new ProductRepository(_context);
             categoryRepository = new CategoryRepository(_context);
             orderRepository = new OrderRepository(_context);
-            memberRepository = new MemberRepository(_context);
-            _navigationService = new NavigationService(productRepository, categoryRepository, orderRepository, memberRepository);
+            staffRepository = new StaffRepository(_context);
+            _navigationService = new NavigationService(productRepository, categoryRepository, orderRepository, staffRepository);
         }
 
         public void menuItem_click(Object sender, RoutedEventArgs e)
@@ -61,9 +61,9 @@ namespace EStore.WPF
                 {
                     frameMain.Content = _navigationService.GetPage("Order");
                 }
-                else if (item.Name == "Member")
+                else if (item.Name == "Staff")
                 {
-                    frameMain.Content = _navigationService.GetPage("Member");
+                    frameMain.Content = _navigationService.GetPage("Staff");
                 }
             }
         }

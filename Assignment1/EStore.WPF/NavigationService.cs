@@ -1,4 +1,4 @@
-﻿using EStore.Core.repository;
+﻿using EStore.WPF.Repositories;
 using EStore.WPF.Pages;
 using System;
 using System.Collections.Generic;
@@ -15,14 +15,14 @@ namespace EStore.WPF
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryRepository;
         private readonly IOrderRepository _orderRepository;
-        private readonly IMemberRepository _memberRepository;
+        private readonly IStaffRepository _staffRepository;
 
-        public NavigationService(IProductRepository productRepository, ICategoryRepository categoryRepository, IOrderRepository orderRepository, IMemberRepository memberRepository)
+        public NavigationService(IProductRepository productRepository, ICategoryRepository categoryRepository, IOrderRepository orderRepository, IStaffRepository staffRepository)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
             _orderRepository = orderRepository;
-            _memberRepository = memberRepository;
+            _staffRepository = staffRepository;
         }
 
         public Page GetPage(string name)
@@ -44,8 +44,8 @@ namespace EStore.WPF
                 case "Order":
                     page = new OrderPage(_orderRepository);
                     break;
-                case "Member":
-                    page = new MemberPage(_memberRepository);
+                case "Staff":
+                    page = new StaffPage(_staffRepository);
                     break;
                 default:
                     throw new ArgumentException($"Page with name '{name}' not found.");

@@ -1,5 +1,5 @@
-﻿using Autofac;
-using EStore.Core.connection;
+﻿
+using EStore.WPF.Models;
 using System.Windows;
 
 namespace EStore.WPF
@@ -13,10 +13,7 @@ namespace EStore.WPF
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            using (var context = new EStoreContext())
-            {
-                context.Database.EnsureCreated();
-            }
+            
         }
 
     }

@@ -9,17 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Windows\Member\" />
     <Folder Include="Windows\Order\" />
     <Folder Include="Windows\Product\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EStore.Core\EStore.Core.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.30" />
   </ItemGroup>
 
 </Project>

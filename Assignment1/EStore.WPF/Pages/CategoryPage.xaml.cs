@@ -1,5 +1,4 @@
-﻿using EStore.Core.Model;
-using EStore.Core.repository;
+﻿using EStore.WPF.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,114 +27,9 @@ namespace EStore.WPF.Pages
             InitializeComponent();
             _categoryRepository = categoryRepository;
             this.Loaded += Load;
-            btnAdd.Click += btnAdd_click;
-            btnUpdate.Click += btnUpdate_click;
-            btnDelete.Click += btnDelete_click;
-            textCategoryId.IsEnabled = false;
-            categoryListView.SelectionChanged += CategoryListViewItem_click;
-        }
-        private void CategoryListViewItem_click(object sender, RoutedEventArgs e)
-        {
-            var cate = categoryListView.SelectedItem as Category;
-            if (cate != null)
-            {
-                textCategoryId.Text = cate.CategoryId.ToString();
-                textCategoryName.Text = cate.CategoryName.ToString();
-            }
-            else { return; }
+            btnSave.Click += btnSave_click;
         }
         private void Load(object sender, RoutedEventArgs e)
-        {
-            ShowListCategory();
-        }
-        private void btnAdd_click(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrEmpty(textCategoryName.Text))
-            {
-                AddCategory();
-            }
-            else
-            {
-                MessageBox.Show("Category not empty");
-                return;
-            }
-        }
-        private void btnUpdate_click(object sender, RoutedEventArgs e)
-        {
-            UpdateCategory();
-        }
-        private void btnDelete_click(object sender, RoutedEventArgs e)
-        {
-            DeleteCategory();
-        }
-        private void AddCategory()
-        {
-            try
-            {
-                string categoryName = textCategoryName.Text;
-                Category cate = new Category() { CategoryName = categoryName };
-                int result = _categoryRepository.Add(cate);
-                if (result > 0)
-                {
-                    ShowListCategory();
-                    MessageBox.Show("Add success");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void UpdateCategory()
-        {
-            try
-            {
-                var cate = categoryListView.SelectedItem as Category;
-                if (cate != null)
-                {
-                    cate.CategoryName = textCategoryName.Text;
-                    int result = _categoryRepository.Update(cate);
-                    if (result > 0)
-                    {
-                        ShowListCategory();
-                        MessageBox.Show("Update success");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Can not update");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void DeleteCategory()
-        {
-            try
-            {
-                Category cate = categoryListView.SelectedItem as Category;
-                if (cate != null)
-                {
-                    int result = _categoryRepository.Delete(cate.CategoryId);
-                    if (result > 0)
-                    {
-                        ShowListCategory();
-                        MessageBox.Show("Delete success");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Can not delete");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void ShowListCategory()
         {
             var categories = _categoryRepository.FindAll();
             if (categories != null)
@@ -143,6 +37,9 @@ namespace EStore.WPF.Pages
                 categoryListView.ItemsSource = categories;
             }
         }
+        private void btnSave_click(object sender,RoutedEventArgs e)
+        {
 
+        }
     }
 }
