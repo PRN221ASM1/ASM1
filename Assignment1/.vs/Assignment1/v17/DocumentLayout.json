@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\staffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -74,11 +74,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 269,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\appsettings.json",
               "RelativeDocumentMoniker": "EStore.WPF\\appsettings.json",
@@ -86,8 +86,7 @@
               "RelativeToolTip": "EStore.WPF\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-15T10:01:46.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T10:01:46.161Z"
             },
             {
               "$type": "Document",
@@ -98,8 +97,7 @@
               "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
               "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T09:07:37.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T09:07:37.167Z"
             },
             {
               "$type": "Document",
@@ -111,12 +109,11 @@
               "RelativeToolTip": "EStore.WPF\\Models\\Staff.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:23:23.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T08:23:23.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.xaml.cs",
               "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\Windows\\Login.xaml.cs",
@@ -124,20 +121,18 @@
               "RelativeToolTip": "EStore.WPF\\Windows\\Login.xaml.cs",
               "ViewState": "AQIAADIAAAAAAAAAAAAAwDIAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:17:43.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T08:17:43.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Login.xaml",
               "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml",
               "RelativeDocumentMoniker": "EStore.WPF\\Windows\\Login.xaml",
               "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml",
               "RelativeToolTip": "EStore.WPF\\Windows\\Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T08:17:42.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T08:17:42.25Z"
             },
             {
               "$type": "Document",
@@ -149,18 +144,17 @@
               "RelativeToolTip": "EStore.WPF\\MainWindow.xaml.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAAAFoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:14:21.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T08:14:21.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "StaffPage.xaml.cs",
               "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
               "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
               "RelativeToolTip": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACgAAAAkAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAgwFMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T08:11:54.605Z",
               "EditorCaption": ""
@@ -174,8 +168,7 @@
               "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml",
               "RelativeToolTip": "EStore.WPF\\Pages\\StaffPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T08:11:52.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T08:11:52.05Z"
             },
             {
               "$type": "Document",
@@ -226,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductPage.xaml.cs",
               "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
               "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
@@ -246,8 +239,7 @@
               "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ReportPage.xaml",
               "RelativeToolTip": "EStore.WPF\\Pages\\ReportPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T08:03:07.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T08:03:07.48Z"
             },
             {
               "$type": "Document",
@@ -270,8 +262,7 @@
               "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
               "RelativeToolTip": "EStore.WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T07:59:15.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T07:59:15.579Z"
             }
           ]
         }
