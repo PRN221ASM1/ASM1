@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\PRN221\project\git\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\
+D:\A_PRN221\Git_Team\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\
 EStore.WPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\PRN221\project\git\ASM1\Assignment1\EStore.WPF\App.xaml
-51889101283
+D:\A_PRN221\Git_Team\ASM1\Assignment1\EStore.WPF\App.xaml
+727359392
 
-11-1510326204
-2161119554280
-MainWindow.xaml;Pages\CategoryPage.xaml;Pages\MemberPage.xaml;Pages\OrderPage.xaml;Pages\ProductPage.xaml;
+13620233113
+2161882329422
+MainWindow.xaml;Pages\CategoryPage.xaml;Pages\MemberPage.xaml;Pages\OrderPage.xaml;Pages\ProductPage.xaml;Windows\Members\CreateMemberPage.xaml;Windows\Members\UpdateMemberPage.xaml;
 
 True
 

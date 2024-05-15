@@ -22,6 +22,12 @@
     <Compile Update="Pages\ProductPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\Members\CreateMemberPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Members\UpdateMemberPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -37,6 +43,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\ProductPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Members\CreateMemberPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Members\UpdateMemberPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

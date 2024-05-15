@@ -27,6 +27,7 @@ namespace EStore.Core.repository
             Member member = _context.Members.FirstOrDefault(m=>m.MemberId == id);
             if (member != null)
             {
+               _context.Members.Remove(member);
                 int result = _context.SaveChanges();
                 return result;
             }

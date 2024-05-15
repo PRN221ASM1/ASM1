@@ -18,7 +18,7 @@ namespace EStore.Core.connection
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost;database=EStore;Integrated Security=True; TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("server=localhost;database=MyStore;Integrated Security=True;TrustServerCertificate=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
