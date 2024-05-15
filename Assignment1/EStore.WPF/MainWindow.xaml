@@ -42,7 +42,7 @@
                 </StackPanel>
                 <!-- Chia cột 0, hàng 2 -->
                 <StackPanel Grid.Row="0" Grid.Column="2">
-                    <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" BorderBrush="White">
+                    <Button x:Name="btnLogout" Content="Logout" HorizontalAlignment="Center" BorderBrush="White">
                         <Button.Background>
                             <SolidColorBrush  Color="Transparent"/>
                         </Button.Background>
