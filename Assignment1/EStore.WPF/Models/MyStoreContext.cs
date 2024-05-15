@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
 
 namespace EStore.WPF.Models
 {
@@ -26,8 +28,11 @@ namespace EStore.WPF.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server=localhost;database=MyStore;Integrated Security=True; TrustServerCertificate=true");
+                var conf = new ConfigurationBuilder()
+                  .AddJsonFile("appsettings.json")
+                  .Build();
+                var connectionString = conf.GetConnectionString("DbConnection");
+                optionsBuilder.UseSqlServer(connectionString);
             }
         }
 

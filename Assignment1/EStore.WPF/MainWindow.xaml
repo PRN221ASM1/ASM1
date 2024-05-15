@@ -36,7 +36,7 @@
                     <Menu x:Name="mainMenu" Style="{DynamicResource mainMenu}" >
                         <MenuItem Header="ProductManages" Name="Product"/>
                         <MenuItem Header="CategoryManages"  Name="Category"/>
-                        <MenuItem Header="MemberManages"  Name="Staff"/>
+                        <MenuItem Header="StaffManages"  Name="Staff"/>
                         <MenuItem Header="OrderManages" Name="Order"/>
                     </Menu>
                 </StackPanel>
