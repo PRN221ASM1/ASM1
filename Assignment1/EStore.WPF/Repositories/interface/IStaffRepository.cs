@@ -15,6 +15,6 @@ namespace EStore.WPF.Repositories
         int Add(Staff staff);
         int Update(Staff staff);
         int Delete(int id);
-
+        IList<Staff> FindByName(string name);
     }
 }

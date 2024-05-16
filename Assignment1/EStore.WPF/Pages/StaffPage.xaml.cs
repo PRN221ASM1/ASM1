@@ -25,7 +25,7 @@ namespace EStore.WPF.Pages
     {
         private readonly RepositoryManager _repo;
         private readonly Staff _staff;
-        public StaffPage(RepositoryManager repo,Staff staff)
+        public StaffPage(RepositoryManager repo, Staff staff)
         {
             InitializeComponent();
             _repo = repo;
@@ -57,6 +57,7 @@ namespace EStore.WPF.Pages
                     //StaffId = int.Parse(txtStaffId.Text),
                     Name = txtName.Text,
                     Password = txtPassword.Text,
+                    Role = 1
                 };
                 int result = _repo.StaffRepository.Add(staff);
                 if (result > 0)
@@ -77,7 +78,7 @@ namespace EStore.WPF.Pages
             {
                 MessageBox.Show("Please select item");
             }
-            if(string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 MessageBox.Show("Please input all fields.");
                 return;
@@ -140,6 +141,16 @@ namespace EStore.WPF.Pages
             {
                 staffListView.ItemsSource = staff;
             }
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                this.Loaded += Load;
+            }
+            var search = _repo.StaffRepository.FindByName(txtSearch.Text);
+            staffListView.ItemsSource = search;
         }
     }
 }
