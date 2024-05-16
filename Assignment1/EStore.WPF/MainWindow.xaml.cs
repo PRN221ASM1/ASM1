@@ -46,19 +46,34 @@ namespace EStore.WPF
                 if (item.Name == "Staff")
                 {
                     item.Header = $"Staff({_staff.Name})";
+                    item.Foreground = Brushes.Red;
                 }
             }
             // staff
             if (_staff.Role == 1)
             {
-
+                foreach (MenuItem item in mainMenu.Items)
+                {
+                    if (item.Name == "Product" || item.Name == "Order" || item.Name == "Staff")
+                    {
+                        item.IsEnabled = true;
+                    }
+                    else
+                    {
+                        item.IsEnabled = false;
+                    }
+                }
             }
             // admin
-            else
+            else if (_staff.Role == 0)
             {
-
+                foreach (MenuItem item in mainMenu.Items)
+                {
+                    item.IsEnabled = true;
+                }
             }
         }
+
         public void menuItem_click(Object sender, RoutedEventArgs e)
         {
             var item = (MenuItem)sender;

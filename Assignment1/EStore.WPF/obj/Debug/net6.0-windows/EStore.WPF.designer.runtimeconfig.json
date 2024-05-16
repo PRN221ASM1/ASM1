@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\quyla\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\quyla\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\quany\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\quany\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

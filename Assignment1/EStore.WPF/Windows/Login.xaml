@@ -6,17 +6,16 @@
         xmlns:local="clr-namespace:EStore.WPF.Windows"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
-    <Grid>
-        <StackPanel HorizontalAlignment="Center" Width="400">
-            <Label x:Name="labEmail" Content="Email" Width="200"/>
-            <TextBox x:Name="txtEmail" Width="200"></TextBox >
+    <Grid Background="LightBlue">
+
+        <Label Grid.Row="0" Content="Sales Management" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="0,51,0,0"/>
+
+        <StackPanel HorizontalAlignment="Center" Width="223" Margin="0,113,0,10">
+            <Label x:Name="labName" Content="Name" Width="200"/>
+            <TextBox x:Name="txtName" Width="200"></TextBox >
             <Label x:Name="labPassword" Content="Password" Width="200"/>
-            <TextBox x:Name="txtPassword"  Width="200"></TextBox>
-            <ComboBox Width="100" x:Name="cobUser">
-                <ComboBoxItem Name="admin" Content="Admin"></ComboBoxItem>
-                <ComboBoxItem Name="staff" Content="Staff"></ComboBoxItem>
-            </ComboBox>
-            <Button x:Name="btnLoign" Width="50" Content="Login"></Button>
+            <PasswordBox x:Name="txtPassword" Width="200"></PasswordBox>
+            <Button x:Name="btnLogin" Width="50" Content="Login" Click="btnLogin_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>

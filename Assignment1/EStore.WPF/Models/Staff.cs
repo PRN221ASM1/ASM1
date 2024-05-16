@@ -5,6 +5,7 @@ namespace EStore.WPF.Models
 {
     public partial class Staff
     {
+       
         public Staff()
         {
             Orders = new HashSet<Order>();
@@ -16,5 +17,6 @@ namespace EStore.WPF.Models
         public int Role { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
+
     }
 }
