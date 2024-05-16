@@ -2,6 +2,7 @@
 using EStore.WPF.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,11 +34,14 @@ namespace EStore.WPF.Repositories
             }
             return 0;
         }
-
         public Staff FindById(int id)
         {
             Staff staff = _context.Staffs.FirstOrDefault(m => m.StaffId == id);
             return staff;
+        }
+        public IList<Staff> FindByName(string name)
+        {
+            return _context.Staffs.Where(s => s.Name.ToLower().Contains(name.ToLower())).ToList();
         }
 
         public IList<Staff> FindAll()

@@ -19,12 +19,18 @@
                 <ColumnDefinition Width="4*"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Width="200">
-                <Label Content="StaffId"></Label>
+                <Label Content="StaffId"></Label> 
                 <TextBox x:Name="txtStaffId"></TextBox>
                 <Label Content="Name"></Label>
                 <TextBox x:Name="txtName"></TextBox>
                 <Label Content="Password"></Label>
                 <TextBox x:Name="txtPassword"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" Width="200">
+                <Label Content="Search"></Label>
+                <TextBox x:Name="txtSearch"></TextBox>
+                <Button x:Name="btnSearch" Content="Search" Width="50" Click="btnSearch_Click"></Button>
             </StackPanel>
             <StackPanel Grid.Row="0" Grid.Column="1" >
                 <Button x:Name="btnAdd" Content="Add" Width="50" Margin="10" Click="btnAdd_Click"></Button>
@@ -33,7 +39,7 @@
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
-            <StackPanel HorizontalAlignment="Left">
+            <StackPanel HorizontalAlignment="Left" >
                 <ListView x:Name="staffListView" SelectionChanged="lstMember_SelectionChanged">
                     <ListView.View>
                         <GridView>
