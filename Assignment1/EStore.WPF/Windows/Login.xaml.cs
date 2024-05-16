@@ -16,54 +16,36 @@ using System.Windows.Shapes;
 
 namespace EStore.WPF.Windows
 {
-    /// <summary>
-    /// Interaction logic for Login.xaml
-    /// </summary>
     public partial class Login : Window
     {
-        private Staff _user;
-        private readonly RepositoryManager repo;
+        private readonly LoginService _loginService;
+
         public Login()
         {
             InitializeComponent();
-            btnLoign.Click += btnLogin_click;
-            _user = new Staff();
-            repo = new RepositoryManager();
-            cobUser.SelectedIndex=0;
+            _loginService = new LoginService();
         }
 
-        private void btnLogin_click(object sebder, RoutedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (loginUser())
+            var name = txtName.Text;
+            var password = txtPassword.Password;
+
+            Staff authenticatedStaff = _loginService.Authenticate(name, password);
+
+            if (authenticatedStaff != null)
             {
-                Window main = new MainWindow(_user);
-                main.Show();
+                var mainWindow = new MainWindow(authenticatedStaff);
+                mainWindow.Show();
                 this.Close();
             }
-
-        }
-        private bool loginUser()
-        {
-            string email = txtEmail.Text;
-            string password = txtPassword.Text;
-            _user = new Staff()
+            else
             {
-                StaffId = 0,
-                Name = email,
-                Password = password,
-                Role = 1
-            };
-            if(cobUser.SelectedIndex==0)
-            {
-                _user.Role = 0;
+                MessageBox.Show("Invalid name or password.");
             }
-
-            return true;
         }
 
-        private void admin_Selected(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
+
 }

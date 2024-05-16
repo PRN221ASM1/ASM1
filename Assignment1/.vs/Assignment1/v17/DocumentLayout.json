@@ -1,70 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\",
+  "WorkspaceRootPath": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\staffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\staffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\reportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\reportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\orderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\orderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\orderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\orderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|e:\\prn221\\project\\git\\asm1\\assignment1\\estore.wpf\\pages\\reportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\reportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|c:\\users\\quany\\onedrive\\documents\\se\\prn221\\assignment 1\\asm1\\assignment1\\estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\pages\\staffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\staffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\estore.wpf\\repositories\\interface\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\repositories\\interface\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,192 +53,132 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\appsettings.json",
-              "RelativeDocumentMoniker": "EStore.WPF\\appsettings.json",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\appsettings.json",
-              "RelativeToolTip": "EStore.WPF\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-15T10:01:46.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductPage.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ProductPage.xaml",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
-              "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T09:07:37.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Staff.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Models\\Staff.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Models\\Staff.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Models\\Staff.cs",
-              "RelativeToolTip": "EStore.WPF\\Models\\Staff.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:23:23.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Windows\\Login.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\Windows\\Login.xaml.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAwDIAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:17:43.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml",
-              "RelativeDocumentMoniker": "EStore.WPF\\Windows\\Login.xaml",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml",
-              "RelativeToolTip": "EStore.WPF\\Windows\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T08:17:42.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAAAFoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:14:21.619Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StaffPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAgwFMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:11:54.605Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "StaffPage.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\StaffPage.xaml",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml",
-              "RelativeToolTip": "EStore.WPF\\Pages\\StaffPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T08:11:52.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrderPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\OrderPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\Pages\\OrderPage.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAAB4AAAAbAAAA",
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Models\\Staff.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Models\\Staff.cs",
+              "RelativeToolTip": "EStore.WPF\\Models\\Staff.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:10:40.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OrderPage.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\OrderPage.xaml",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\OrderPage.xaml",
-              "RelativeToolTip": "EStore.WPF\\Pages\\OrderPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T08:10:37.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RepositoryManager.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\RepositoryManager.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\RepositoryManager.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\RepositoryManager.cs",
-              "RelativeToolTip": "EStore.WPF\\RepositoryManager.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:07:22.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReportPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ReportPage.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ReportPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ReportPage.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\Pages\\ReportPage.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:05:00.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductPage.xaml.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAiwB0AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:04:20.283Z",
+              "WhenOpened": "2024-05-16T08:45:04.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ReportPage.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ReportPage.xaml",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ReportPage.xaml",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ReportPage.xaml",
-              "RelativeToolTip": "EStore.WPF\\Pages\\ReportPage.xaml",
+              "DocumentIndex": 4,
+              "Title": "StaffPage.xaml",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml",
+              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\StaffPage.xaml",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml",
+              "RelativeToolTip": "EStore.WPF\\Pages\\StaffPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T08:03:07.48Z"
+              "WhenOpened": "2024-05-16T09:22:19.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "NavigationService.cs",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\NavigationService.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\NavigationService.cs",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\NavigationService.cs",
-              "RelativeToolTip": "EStore.WPF\\NavigationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "EStore.WPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
+              "RelativeToolTip": "EStore.WPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-16T09:21:50.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaffPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "RelativeToolTip": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwCsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:01:39.609Z"
+              "WhenOpened": "2024-05-16T09:11:44.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "EStore.WPF\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwC4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:57:48.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepositoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\RepositoryManager.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\RepositoryManager.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\RepositoryManager.cs",
+              "RelativeToolTip": "EStore.WPF\\RepositoryManager.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAgwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:33:41.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StaffRepository.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Repositories\\StaffRepository.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Repositories\\StaffRepository.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Repositories\\StaffRepository.cs",
+              "RelativeToolTip": "EStore.WPF\\Repositories\\StaffRepository.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:33:03.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IStaffRepository.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Repositories\\interface\\IStaffRepository.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Repositories\\interface\\IStaffRepository.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Repositories\\interface\\IStaffRepository.cs",
+              "RelativeToolTip": "EStore.WPF\\Repositories\\interface\\IStaffRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:32:04.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\LoginService.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\LoginService.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\LoginService.cs",
+              "RelativeToolTip": "EStore.WPF\\LoginService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwCAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:31:38.845Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "EStore.WPF\\MainWindow.xaml",
-              "ToolTip": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\MainWindow.xaml",
-              "RelativeToolTip": "EStore.WPF\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T07:59:15.579Z"
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Windows\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\Windows\\Login.xaml.cs",
+              "RelativeToolTip": "EStore.WPF\\Windows\\Login.xaml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwCMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:30:50.84Z"
             }
           ]
         }

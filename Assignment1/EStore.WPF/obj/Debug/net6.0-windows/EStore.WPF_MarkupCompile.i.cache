@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\A_PRN221\Git_Team\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\
+C:\Users\quany\OneDrive\Documents\SE\PRN221\Assignment 1\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\
 EStore.WPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\A_PRN221\Git_Team\ASM1\Assignment1\EStore.WPF\App.xaml
+C:\Users\quany\OneDrive\Documents\SE\PRN221\Assignment 1\ASM1\Assignment1\EStore.WPF\App.xaml
 6-1192616384
 
-282062931500
-2201938426392
+29-1538177513
+220-577493113
 MainWindow.xaml;Pages\OrderPage.xaml;Pages\ProductPage.xaml;Pages\ReportPage.xaml;Pages\StaffPage.xaml;Windows\Login.xaml;
 
-False
+True
 

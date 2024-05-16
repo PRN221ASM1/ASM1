@@ -39,13 +39,16 @@ namespace EStore.WPF.Pages
             {
                 btnAdd.Visibility = Visibility.Collapsed;
                 btnDelete.Visibility = Visibility.Collapsed;
+                searchPanel.Visibility = Visibility.Collapsed; 
             }
             else if (_staff.Role == 0)
             {
                 btnAdd.Visibility = Visibility.Visible;
                 btnDelete.Visibility = Visibility.Visible;
+                searchPanel.Visibility = Visibility.Visible; 
             }
         }
+
 
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -72,6 +75,36 @@ namespace EStore.WPF.Pages
             }
         }
 
+        //private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if (lstMember_SelectionChanged == null)
+        //    {
+        //        MessageBox.Show("Please select item");
+        //    }
+        //    if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+        //    {
+        //        MessageBox.Show("Please input all fields.");
+        //        return;
+        //    }
+        //    try
+        //    {
+        //        Staff staff = (Staff)staffListView.SelectedItem;
+        //        //staff.StaffId = int.Parse(txtStaffId.Text);
+        //        staff.Name = txtName.Text;
+        //        staff.Password = txtPassword.Text;
+        //        int result = _repo.StaffRepository.Update(staff);
+        //        if (result > 0)
+        //        {
+        //            MessageBox.Show("Updated");
+        //            staffListView.ItemsSource = _repo.StaffRepository.FindAll();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
+
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
             if (lstMember_SelectionChanged == null)
@@ -86,14 +119,24 @@ namespace EStore.WPF.Pages
             try
             {
                 Staff staff = (Staff)staffListView.SelectedItem;
-                //staff.StaffId = int.Parse(txtStaffId.Text);
+
+
                 staff.Name = txtName.Text;
                 staff.Password = txtPassword.Text;
                 int result = _repo.StaffRepository.Update(staff);
                 if (result > 0)
                 {
                     MessageBox.Show("Updated");
-                    staffListView.ItemsSource = _repo.StaffRepository.FindAll();
+                    
+                    if (_staff.Role == 1)
+                    {
+                        List<Staff> loggedInStaffList = new List<Staff> { _staff };
+                        staffListView.ItemsSource = loggedInStaffList;
+                    }
+                    else
+                    {
+                        staffListView.ItemsSource = _repo.StaffRepository.FindAll();
+                    }
                 }
             }
             catch (Exception ex)
@@ -101,6 +144,8 @@ namespace EStore.WPF.Pages
                 MessageBox.Show(ex.Message);
             }
         }
+
+
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -134,14 +179,32 @@ namespace EStore.WPF.Pages
                 txtPassword.Text = staff.Password;
             }
         }
+        //private void Load(object sender, RoutedEventArgs e)
+        //{
+        //    var staff = _repo.StaffRepository.FindAll();
+        //    if (staff != null)
+        //    {
+        //        staffListView.ItemsSource = staff;
+        //    }
+        //}
+
         private void Load(object sender, RoutedEventArgs e)
         {
-            var staff = _repo.StaffRepository.FindAll();
-            if (staff != null)
+            if (_staff.Role == 1)
             {
-                staffListView.ItemsSource = staff;
+                List<Staff> loggedInStaffList = new List<Staff> { _staff };
+                staffListView.ItemsSource = loggedInStaffList;
+            }
+            else
+            {
+                var staff = _repo.StaffRepository.FindAll();
+                if (staff != null)
+                {
+                    staffListView.ItemsSource = staff;
+                }
             }
         }
+
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
