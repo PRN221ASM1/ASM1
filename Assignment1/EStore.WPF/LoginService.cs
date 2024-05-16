@@ -26,6 +26,15 @@ namespace EStore.WPF
 
         public Staff? Authenticate(string name, string password)
         {
+            var adminName = _configuration["Account:Name"];
+            var adminPassword = _configuration["Account:Password"];
+            var adminRole = int.Parse(_configuration["Account:role"]);
+
+            if (name == adminName && password == adminPassword)
+            {
+                return new Staff { Name = adminName, Password = adminPassword, Role = adminRole };
+            }
+
             var staff = _repositoryManager.StaffRepository.FindByName(name).FirstOrDefault();
 
             if (staff != null && staff.Password == password)

@@ -56,5 +56,9 @@ namespace EStore.WPF.Repositories
             int result = (_context.SaveChanges());
             return result;
         }
+        public bool IsNameExists(string name)
+        {
+            return _context.Staffs.Any(staff => staff.Name.ToUpper() == name.Trim().ToUpper());
+        }
     }
 }

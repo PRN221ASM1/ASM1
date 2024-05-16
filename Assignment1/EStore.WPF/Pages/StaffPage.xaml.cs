@@ -55,6 +55,11 @@ namespace EStore.WPF.Pages
         {
             try
             {
+                if (_repo.StaffRepository.IsNameExists(txtName.Text.Trim().ToString()))
+                {
+                    MessageBox.Show("Name is exists");
+                    return;
+                }
                 Staff staff = new Staff
                 {
                     //StaffId = int.Parse(txtStaffId.Text),
