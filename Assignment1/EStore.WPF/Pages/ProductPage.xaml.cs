@@ -24,11 +24,43 @@ namespace EStore.WPF.Pages
     {
         private readonly RepositoryManager _repo;
         private readonly Staff _staff;
-        public ProductPage(RepositoryManager repo,Staff staff)
+        public ProductPage(RepositoryManager repo, Staff staff)
         {
             InitializeComponent();
             _repo = repo;
             _staff = staff;
+            LoadProducts();
+        }
+
+        private void LoadProducts()
+        {
+            var products = _repo.ProductRepository.FindAll();
+            productListView.ItemsSource = products;
+        }
+
+        private void searchButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void addButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void editButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void deleteButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void searchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
