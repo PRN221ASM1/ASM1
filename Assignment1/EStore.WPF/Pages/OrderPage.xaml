@@ -8,7 +8,87 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="OrderPage">
 
-    <Grid>
-        <TextBlock FontSize="40">Order</TextBlock>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <StackPanel  HorizontalAlignment="Center">
+                    <Menu x:Name="menuCRUDOrder">
+                        <MenuItem Header="Add" Name="Add"/>
+                        <MenuItem Header="Update" Name="Update"/>
+                        <MenuItem Header="Delete" Name="Delete"/>
+                    </Menu>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <StackPanel  Grid.Row="0">
+                    <ListView x:Name="orderDetailsListView" Height="150" >
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="OrderDetail ID" DisplayMemberBinding="{Binding OrderDetailId}" Width="80"/>
+                                <GridViewColumn Header="Product ID" DisplayMemberBinding="{Binding ProductId}" Width="80"/>
+                                <GridViewColumn Header="Product Name" DisplayMemberBinding="{Binding Product.ProductId}" Width="80"/>
+                                <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="80"/>
+                                <GridViewColumn Header="Price" DisplayMemberBinding="{Binding UnitPrice}" Width="80"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </StackPanel>
+                <StackPanel Grid.Row="1"  Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Label Content="Total" Width="50" MaxHeight="30"></Label>
+                    <TextBox Width="100" x:Name="txtTotalPriceDetail" MaxHeight="30" Margin="0,5,0,10"></TextBox>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition  Height="9*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0">
+                    <Menu x:Name="menuFilterOrders" >
+                        <MenuItem Header="Date"  Name="Date">
+                            <Label  Content="Start" Height="30"/>
+                            <DatePicker x:Name="StartDate" Height="25" />
+                            <Label  Content="End" Height="30"/>
+                            <DatePicker x:Name="EndtDate" Height="25"/>
+                            <Button x:Name="btnDateFilter" Content="Save" Height="25"/>
+                        </MenuItem>
+                        <MenuItem Header="Staff" Name="Staff">
+                            <ComboBox  x:Name="cobStaffs" SelectedIndex="0"/>
+                        </MenuItem>
+                    </Menu>
+                </StackPanel>
+                <StackPanel Grid.Row="1">
+                    <ListView x:Name="orderListView" Grid.Row="1">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Order ID" DisplayMemberBinding="{Binding OrderId}" Width="100"/>
+                                <GridViewColumn Header="OrderDate" DisplayMemberBinding="{Binding OrderDate}" Width="150"/>
+                                <GridViewColumn Header="Staff Name" DisplayMemberBinding="{Binding Staff.Name}" Width="150"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </StackPanel>
+
+            </Grid>
+        </Grid>
+
     </Grid>
 </Page>

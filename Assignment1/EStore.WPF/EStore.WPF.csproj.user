@@ -10,9 +10,6 @@
     <Compile Update="MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\OrderPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Pages\ProductPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
