@@ -30,12 +30,28 @@ namespace EStore.WPF.Pages
             _repo = repo;
             _staff = staff;
             LoadProducts();
+            LoadCategories();
+        }
+        private void LoadCategories()
+        {
+            var categories = _repo.CategoryRepository.FindAll();
+            categoryComboBox.ItemsSource = categories;
         }
 
         private void LoadProducts()
         {
             var products = _repo.ProductRepository.FindAll();
             productListView.ItemsSource = products;
+        }
+        private void ProductListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (productListView.SelectedItem is Product selectedProduct)
+            {
+                productIdTextBox.Text = selectedProduct.ProductId.ToString();
+                categoryComboBox.SelectedItem = selectedProduct.Category; 
+                productNameTextBox.Text = selectedProduct.ProductName;
+                unitPriceTextBox.Text = selectedProduct.UnitPrice.ToString("F2"); 
+            }
         }
 
         private void searchButton_Click(object sender, RoutedEventArgs e)
