@@ -53,7 +53,7 @@ namespace EStore.WPF.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EStore.WPF;component/pages/reportpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EStore.WPF;V1.0.0.0;component/pages/reportpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\ReportPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

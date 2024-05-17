@@ -49,5 +49,16 @@ namespace EStore.WPF.Repositories
             int result = (_context.SaveChanges());
             return result;
         }
+        public List<Product> GetByCategory(int categoryId)
+        {
+            if (categoryId != 0)
+            {
+                return _context.Products.Include(p => p.Category).Where(p => p.CategoryId == categoryId).ToList();
+            }
+            else
+            {
+                return _context.Products.Include(p => p.Category).ToList();
+            }
+        }
     }
 }

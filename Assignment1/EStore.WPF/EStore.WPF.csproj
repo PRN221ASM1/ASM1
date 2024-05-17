@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Windows\Order\" />
+    <Compile Remove="Windows\Order\**" />
+    <EmbeddedResource Remove="Windows\Order\**" />
+    <None Remove="Windows\Order\**" />
+    <Page Remove="Windows\Order\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Windows\Product\" />
   </ItemGroup>
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZNvfESlUFbKPU/d8rg8uSaGGkavkMcCPxedoT4lnCbWmQRCf5mV6SyRJops1cUGe9NFwF3DhsTRaBUL+I9+YKw==",
+  "dgSpecHash": "QD+5gF3ubtbDgbMmKG5qTZl2ycl/RQslpVGLsf+D2xNYyeNng4rG9FdaVNstSVfyDKy7eohaaC3moeVSn09y3A==",
   "success": true,
-  "projectFilePath": "D:\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+  "projectFilePath": "D:\\a Sum24\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\quyla\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\quyla\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",

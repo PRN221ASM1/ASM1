@@ -2284,11 +2284,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+      "projectUniqueName": "D:\\a Sum24\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
       "projectName": "EStore.WPF",
-      "projectPath": "D:\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+      "projectPath": "D:\\a Sum24\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
       "packagesPath": "C:\\Users\\quyla\\.nuget\\packages\\",
-      "outputPath": "D:\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\obj\\",
+      "outputPath": "D:\\a Sum24\\A_PRN221\\Git_Team\\ASM1\\Assignment1\\EStore.WPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

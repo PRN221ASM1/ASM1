@@ -45,5 +45,8 @@
     <Page Update="Windows\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Windows\Orders\CreateOrder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

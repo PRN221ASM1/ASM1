@@ -14,5 +14,7 @@ namespace EStore.WPF.Repositories
         int Add(Order order);
         int Update(Order order);
         int Delete(int id);
+        List<Order> GetOrderByDate(DateTime from, DateTime to);
+        List<OrderDetail> GeOrderDetails(int orderId);
     }
 }
