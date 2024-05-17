@@ -141,7 +141,7 @@ namespace EStore.WPF.Windows.Orders {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EStore.WPF;V1.0.0.0;component/windows/orders/createorder.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EStore.WPF;component/windows/orders/createorder.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Windows\Orders\CreateOrder.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
