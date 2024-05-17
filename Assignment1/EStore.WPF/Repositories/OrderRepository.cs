@@ -2,6 +2,7 @@
 using EStore.WPF.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,14 +33,14 @@ namespace EStore.WPF.Repositories
         public int Delete(int id)
         {
             _context.Orders.Remove(FindById(id));
-            int result =  _context.SaveChanges();
+            int result = _context.SaveChanges();
             return result;
         }
 
         public Order FindById(int id)
         {
-            Order order = _context.Orders.Include(o=>o.Staff)
-                .FirstOrDefault(o=>o.OrderId == id);
+            var order = _context.Orders
+           .FirstOrDefault(o => o.OrderId == id);
             return order;
         }
 
@@ -54,6 +55,16 @@ namespace EStore.WPF.Repositories
             _context.Orders.Update(order);
             int result = _context.SaveChanges();
             return result;
+        }
+        public List<Order> GetOrderByDate(DateTime from, DateTime to)
+        {
+            List<Order> orders = _context.Orders.Where(o => o.OrderDate >= from && o.OrderDate <= to).ToList();
+            return orders;
+        }
+        public List<OrderDetail> GeOrderDetails(int orderId)
+        {
+            List<OrderDetail> orderDetails = _context.OrderDetails.Where(od => od.OrderId == orderId).Include(od => od.Product).ToList();
+            return orderDetails;
         }
     }
 }

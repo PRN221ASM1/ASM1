@@ -38,6 +38,7 @@ namespace EStore.WPF
             repositoryManager = new RepositoryManager();
             _navigationService = new NavigationService(repositoryManager,staff);
             setControl();
+            this.WindowState = WindowState.Maximized;
         }
         private void setControl()
         {
@@ -47,16 +48,6 @@ namespace EStore.WPF
                 {
                     item.Header = $"Staff({_staff.Name})";
                 }
-            }
-            // staff
-            if (_staff.Role == 1)
-            {
-
-            }
-            // admin
-            else
-            {
-
             }
         }
         public void menuItem_click(Object sender, RoutedEventArgs e)

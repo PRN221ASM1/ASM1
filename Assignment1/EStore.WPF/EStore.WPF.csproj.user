@@ -25,6 +25,9 @@
     <Compile Update="Windows\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\Orders\CreateOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -43,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Orders\CreateOrder.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

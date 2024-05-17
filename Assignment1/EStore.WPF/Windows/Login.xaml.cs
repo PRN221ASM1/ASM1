@@ -37,6 +37,7 @@ namespace EStore.WPF.Windows
             if (loginUser())
             {
                 Window main = new MainWindow(_user);
+                
                 main.Show();
                 this.Close();
             }
@@ -46,18 +47,8 @@ namespace EStore.WPF.Windows
         {
             string email = txtEmail.Text;
             string password = txtPassword.Text;
-            _user = new Staff()
-            {
-                StaffId = 0,
-                Name = email,
-                Password = password,
-                Role = 1
-            };
-            if(cobUser.SelectedIndex==0)
-            {
-                _user.Role = 0;
-            }
-
+            _user = repo.StaffRepository.FindById(1);
+            _user.Role = 0;
             return true;
         }
 

@@ -14,6 +14,13 @@ namespace EStore.WPF
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            using(var context = new MyStoreContext())
+            {
+                if (context != null)
+                {
+                    context.Database.EnsureCreated();
+                }
+            }
             Login login = new Login();
             login.Show();
         }

@@ -14,6 +14,5 @@ namespace EStore.WPF.Repositories
         int Add(Category category);
         int Update(Category category);
         int Delete(int id);
-
     }
 }
