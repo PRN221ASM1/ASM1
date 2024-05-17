@@ -1,5 +1,6 @@
 ﻿using EStore.WPF.Models;
 using EStore.WPF.Repositories;
+using EStore.WPF.Windows.Orders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,8 +30,7 @@ namespace EStore.WPF.Pages
             InitializeComponent();
             _repo = repo;
             _staff = staff;
-<<<<<<< Updated upstream
-=======
+
             this.Loaded += Load;
             orderListView.SelectionChanged += ItemOrderListView_SelectionChanged;
             foreach(MenuItem item in menuCRUDOrder.Items)
@@ -158,8 +158,6 @@ namespace EStore.WPF.Pages
         private void CobSelection_chance(object sender,RoutedEventArgs e)
         {
             ShowListOrder();
-            
->>>>>>> Stashed changes
         }
     }
 }
