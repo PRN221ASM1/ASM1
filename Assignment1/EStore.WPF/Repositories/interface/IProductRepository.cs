@@ -11,6 +11,7 @@ namespace EStore.WPF.Repositories
     {
         Product FindById(int id);
         IList<Product> FindAll();
+        IList<Product> SearchByName(string searchText);
         int Add(Product product);
         int Update(Product product);
         int Delete(int id);

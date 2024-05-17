@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\SE 7\PRN221\ASM1\Assignment1\EStore.WPF\App.xaml
-6-1192616384
+7-511784077
 
-29-1538177513
+30-2140555302
 220-2046532753
-MainWindow.xaml;Pages\OrderPage.xaml;Pages\ProductPage.xaml;Pages\ReportPage.xaml;Pages\StaffPage.xaml;Windows\Login.xaml;
+MainWindow.xaml;Pages\AddProductPage.xaml;Pages\OrderPage.xaml;Pages\ProductPage.xaml;Pages\ReportPage.xaml;Pages\StaffPage.xaml;Windows\Login.xaml;
 
 True
 

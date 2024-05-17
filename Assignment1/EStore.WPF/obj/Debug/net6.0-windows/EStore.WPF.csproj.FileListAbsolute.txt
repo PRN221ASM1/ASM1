@@ -474,3 +474,5 @@ D:\SE 7\PRN221\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\EStore.WPF.s
 D:\SE 7\PRN221\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\EStore.WPF.csproj.Up2Date
 D:\SE 7\PRN221\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\EStore.WPF.genruntimeconfig.cache
 D:\SE 7\PRN221\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\ref\EStore.WPF.dll
+D:\SE 7\PRN221\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\Pages\AddProductPage.baml
+D:\SE 7\PRN221\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\Pages\AddProductPage.g.cs
