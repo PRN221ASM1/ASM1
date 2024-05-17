@@ -14,5 +14,6 @@ namespace EStore.WPF.Repositories
         int Add(Product product);
         int Update(Product product);
         int Delete(int id);
+        List<Product> GetByCategory(int categoryId);
     }
 }
