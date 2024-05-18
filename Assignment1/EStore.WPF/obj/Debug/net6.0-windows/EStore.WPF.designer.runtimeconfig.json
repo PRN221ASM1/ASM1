@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\quany\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\quany\\.nuget\\packages"
+      "C:\\Users\\LINH\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\LINH\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

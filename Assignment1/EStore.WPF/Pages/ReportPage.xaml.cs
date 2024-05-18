@@ -32,7 +32,7 @@ namespace EStore.WPF.Pages
             _staff = staff;
 
             this.Loaded += Load;
-            orderListView.SelectionChanged += ItemOrderListView_SelectionChanged;
+            orderListView.MouseDoubleClick += ItemOrderListView_SelectionChanged;
             cobStaffs.SelectionChanged += CobSelection_chance;
             btnDateFilter.Click += BtnDateFilter_Click;
 

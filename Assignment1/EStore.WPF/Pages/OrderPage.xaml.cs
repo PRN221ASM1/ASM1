@@ -32,7 +32,7 @@ namespace EStore.WPF.Pages
             _staff = staff;
 
             this.Loaded += Load;
-            orderListView.SelectionChanged += ItemOrderListView_SelectionChanged;
+            orderListView.MouseDoubleClick += ItemOrderListView_SelectionChanged;
             foreach(MenuItem item in menuCRUDOrder.Items)
             {
                 item.Click += itemMenuCRUDOrder_click;
