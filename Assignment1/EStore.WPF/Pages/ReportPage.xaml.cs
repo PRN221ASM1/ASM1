@@ -32,7 +32,7 @@ namespace EStore.WPF.Pages
             _staff = staff;
 
             this.Loaded += Load;
-            orderListView.SelectionChanged += ItemOrderListView_SelectionChanged;
+            orderListView.MouseDoubleClick += ItemOrderListView_SelectionChanged;
             cobStaffs.SelectionChanged += CobSelection_chance;
             btnDateFilter.Click += BtnDateFilter_Click;
 
@@ -95,8 +95,8 @@ namespace EStore.WPF.Pages
             try
             {
                 var order = orderListView.SelectedItem as Order;
-                List<OrderDetail> orderDetails = _repo.OrderRepository.GeOrderDetails(order.OrderId);
-                orderDetailsListView.ItemsSource = orderDetails==null?null: orderDetails;
+                orderDetailsListView.ItemsSource = null;
+                orderDetailsListView.ItemsSource = _repo.OrderRepository.GeOrderDetails(order.OrderId);
                 double total = 0;
                 foreach (var item in order.OrderDetails)
                 {

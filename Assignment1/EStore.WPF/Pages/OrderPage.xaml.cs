@@ -32,7 +32,7 @@ namespace EStore.WPF.Pages
             _staff = staff;
 
             this.Loaded += Load;
-            orderListView.SelectionChanged += ItemOrderListView_SelectionChanged;
+            orderListView.MouseDoubleClick += ItemOrderListView_SelectionChanged;
             foreach(MenuItem item in menuCRUDOrder.Items)
             {
                 item.Click += itemMenuCRUDOrder_click;
@@ -99,6 +99,7 @@ namespace EStore.WPF.Pages
            try
             {
                 var order = orderListView.SelectedItem as Order;
+                orderDetailsListView.ItemsSource = null;
                 orderDetailsListView.ItemsSource = _repo.OrderRepository.GeOrderDetails(order.OrderId);
                 double total = 0;
                 foreach (var item in order.OrderDetails)
