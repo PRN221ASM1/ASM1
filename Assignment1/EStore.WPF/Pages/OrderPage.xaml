@@ -76,7 +76,7 @@
                     </Menu>
                 </StackPanel>
                 <StackPanel Grid.Row="1">
-                    <ListView x:Name="orderListView" Grid.Row="1">
+                    <ListView x:Name="orderListView" Grid.Row="1" MinHeight="200" MaxHeight="250">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Order ID" DisplayMemberBinding="{Binding OrderId}" Width="100"/>
