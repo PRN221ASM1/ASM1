@@ -42,7 +42,7 @@
                             <GridView>
                                 <GridViewColumn Header="OrderDetail ID" DisplayMemberBinding="{Binding OrderDetailId}" Width="80"/>
                                 <GridViewColumn Header="Product ID" DisplayMemberBinding="{Binding ProductId}" Width="80"/>
-                                <GridViewColumn Header="Product Name" DisplayMemberBinding="{Binding Product.ProductId}" Width="80"/>
+                                <GridViewColumn Header="Product Name" DisplayMemberBinding="{Binding Product.ProductName}" Width="80"/>
                                 <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="80"/>
                                 <GridViewColumn Header="Price" DisplayMemberBinding="{Binding UnitPrice}" Width="80"/>
                             </GridView>

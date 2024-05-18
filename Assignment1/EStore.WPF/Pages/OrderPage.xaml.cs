@@ -49,8 +49,6 @@ namespace EStore.WPF.Pages
 
         private void Load(object sender, RoutedEventArgs e)
         {
-            StartDate.SelectedDate = DateTime.Now.AddDays(-4);
-            EndtDate.SelectedDate = DateTime.Now;
             SetControll();
             SetFilterOrder();
             ShowListOrder();
@@ -88,7 +86,7 @@ namespace EStore.WPF.Pages
         }
         private void SetFilterOrder()
         {
-            StartDate.SelectedDate = DateTime.Now;
+            StartDate.SelectedDate = DateTime.Now.AddDays(-30);
             EndtDate.SelectedDate = DateTime.Now;
             var staffs = new List<Staff>() { new Staff() { StaffId = 0, Name = "All" } };
             staffs.AddRange(_repo.StaffRepository.FindAll());
