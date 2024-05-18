@@ -1,11 +1,6 @@
 ﻿
 using EStore.WPF.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EStore.WPF.Repositories
 {
@@ -59,6 +54,19 @@ namespace EStore.WPF.Repositories
             {
                 return _context.Products.Include(p => p.Category).ToList();
             }
+        }
+        public IList<Product> SearchByName(string searchText)
+        {
+            // Chuyển đổi tên sản phẩm được nhập thành chữ thường để tìm kiếm không phân biệt hoa thường
+            searchText = searchText.ToLower();
+
+            // Lọc danh sách sản phẩm dựa trên tên sản phẩm
+            var filteredProducts = _context.Products
+                                    .Include(p => p.Category)
+                                    .Where(p => p.ProductName.ToLower().Contains(searchText))
+                                    .ToList();
+
+            return filteredProducts;
         }
     }
 }

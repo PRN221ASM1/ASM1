@@ -1,9 +1,4 @@
 ﻿using EStore.WPF.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EStore.WPF.Repositories
 {
@@ -15,5 +10,6 @@ namespace EStore.WPF.Repositories
         int Update(Product product);
         int Delete(int id);
         List<Product> GetByCategory(int categoryId);
+        IList<Product> SearchByName(string searchText);
     }
 }
