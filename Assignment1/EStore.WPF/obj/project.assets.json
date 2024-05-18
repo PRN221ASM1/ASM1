@@ -2278,19 +2278,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Acer\\.nuget\\packages\\": {}
+    "C:\\Users\\LINH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Documents\\GitHub\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+      "projectUniqueName": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
       "projectName": "EStore.WPF",
-      "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
-      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\Documents\\GitHub\\ASM1\\Assignment1\\EStore.WPF\\obj\\",
+      "projectPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+      "packagesPath": "C:\\Users\\LINH\\.nuget\\packages\\",
+      "outputPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2349,7 +2349,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

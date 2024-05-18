@@ -21,11 +21,11 @@ namespace EStore.WPF.Pages
     /// <summary>
     /// Interaction logic for OrderPage.xaml
     /// </summary>
-    public partial class OrderPage : Page
+    public partial class ReportPage : Page
     {
         private readonly RepositoryManager _repo;
         private readonly Staff _staff;
-        public OrderPage(RepositoryManager repo, Staff staff)
+        public ReportPage(RepositoryManager repo, Staff staff)
         {
             InitializeComponent();
             _repo = repo;
@@ -33,10 +33,6 @@ namespace EStore.WPF.Pages
 
             this.Loaded += Load;
             orderListView.SelectionChanged += ItemOrderListView_SelectionChanged;
-            foreach (MenuItem item in menuCRUDOrder.Items)
-            {
-                item.Click += itemMenuCRUDOrder_click;
-            }
             cobStaffs.SelectionChanged += CobSelection_chance;
             btnDateFilter.Click += BtnDateFilter_Click;
 
@@ -49,8 +45,6 @@ namespace EStore.WPF.Pages
 
         private void Load(object sender, RoutedEventArgs e)
         {
-            StartDate.SelectedDate = DateTime.Now.AddDays(-4);
-            EndtDate.SelectedDate = DateTime.Now;
             SetControll();
             SetFilterOrder();
             ShowListOrder();
@@ -88,7 +82,7 @@ namespace EStore.WPF.Pages
         }
         private void SetFilterOrder()
         {
-            StartDate.SelectedDate = DateTime.Now;
+            StartDate.SelectedDate = DateTime.Now.AddDays(-30);
             EndtDate.SelectedDate = DateTime.Now;
             var staffs = new List<Staff>() { new Staff() { StaffId = 0, Name = "All" } };
             staffs.AddRange(_repo.StaffRepository.FindAll());
@@ -101,7 +95,8 @@ namespace EStore.WPF.Pages
             try
             {
                 var order = orderListView.SelectedItem as Order;
-                orderDetailsListView.ItemsSource = _repo.OrderRepository.GeOrderDetails(order.OrderId);
+                List<OrderDetail> orderDetails = _repo.OrderRepository.GeOrderDetails(order.OrderId);
+                orderDetailsListView.ItemsSource = orderDetails==null?null: orderDetails;
                 double total = 0;
                 foreach (var item in order.OrderDetails)
                 {
@@ -132,29 +127,7 @@ namespace EStore.WPF.Pages
                 //
             }
         }
-        private void itemMenuCRUDOrder_click(object sender, RoutedEventArgs e)
-        {
-            var item = (sender as MenuItem);
-            switch (item.Name)
-            {
-                case "Add":
-                    Window createOd = new CreateOrder(_repo, _staff);
-                    createOd.Closed += CreateOd_Closed;
-                    createOd.Show();
-                    break;
-                case "Update":
-                    break;
-                case "Delete":
-                    break;
-            }
-        }
 
-        private void CreateOd_Closed(object? sender, EventArgs e)
-        {
-            StartDate.SelectedDate = DateTime.Now.AddDays(-4);
-            EndtDate.SelectedDate = DateTime.Now;
-            ShowListOrder();
-        }
         private void CobSelection_chance(object sender, RoutedEventArgs e)
         {
             ShowListOrder();
