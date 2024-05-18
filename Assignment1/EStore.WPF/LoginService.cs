@@ -35,15 +35,11 @@ namespace EStore.WPF
                 return new Staff { Name = adminName, Password = adminPassword, Role = adminRole };
             }
 
-            var staff = _repositoryManager.StaffRepository.FindByName(name).FirstOrDefault();
+            var staff = _repositoryManager.StaffRepository.Login(name, password);
 
-            if (staff != null && staff.Password == password)
-            {
-                return staff;
-            }
-
-            return null;
+            return staff;
         }
+
 
     }
 

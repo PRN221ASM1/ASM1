@@ -50,6 +50,12 @@ namespace EStore.WPF.Repositories
             return members;
         }
 
+        public Staff Login(string name, string password)
+        {
+            return _context.Staffs.FirstOrDefault(s => s.Name.ToLower() == name.ToLower() && s.Password == password);
+        }
+
+
         public int Update(Staff staff)
         {
             _context.Staffs.Update(staff);
