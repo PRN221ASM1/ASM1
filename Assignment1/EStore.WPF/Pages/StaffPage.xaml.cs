@@ -124,8 +124,6 @@ namespace EStore.WPF.Pages
             try
             {
                 Staff staff = (Staff)staffListView.SelectedItem;
-
-
                 staff.Name = txtName.Text;
                 staff.Password = txtPassword.Text;
                 int result = _repo.StaffRepository.Update(staff);

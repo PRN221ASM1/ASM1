@@ -40,21 +40,24 @@
             </ListView.View>
         </ListView>
 
-
-        <StackPanel Grid.Row="1" Grid.Column="1" Margin="10">
-            <TextBlock Text="Product ID" Margin="0,0,0,5"/>
-            <TextBox x:Name="productIdTextBox" Width="200" Margin="0,0,0,10" IsReadOnly="True" />
-
-            <TextBlock Text="Category Name" Margin="0,0,0,5"/>
-            <ComboBox x:Name="categoryComboBox" Width="200" Margin="0,0,0,10" DisplayMemberPath="CategoryName" SelectedValuePath="CategoryId"/>
-
-            <TextBlock Text="Product Name" Margin="0,0,0,5"/>
-            <TextBox x:Name="productNameTextBox" Width="200" Margin="0,0,0,10" />
-
-            <TextBlock Text="Unit Price" Margin="0,0,0,5"/>
-            <TextBox x:Name="unitPriceTextBox" Width="200" Margin="0,0,0,10" />
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="10" Width="250">
+                <Label Content="Product ID" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="productIdTextBox"  IsEnabled="False" Width="150" IsReadOnly="True" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="10" Width="250">
+                <Label Content="Category Name"  Width="100" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ComboBox x:Name="categoryComboBox" DisplayMemberPath="CategoryName" SelectedValuePath="CategoryId"  Width="150" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="10" Width="250">
+                <Label Content="Product Name"   Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                <TextBox x:Name="productNameTextBox" Width="150" HorizontalAlignment="Right" VerticalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="10" Width="250">
+                <Label Content="Unit Price"  Width="100" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="unitPriceTextBox" Width="150" HorizontalAlignment="Right" VerticalAlignment="Center"  />
+            </StackPanel>
         </StackPanel>
-        <Label Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="435,121,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

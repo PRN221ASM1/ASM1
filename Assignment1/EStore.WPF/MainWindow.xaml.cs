@@ -26,6 +26,7 @@ namespace EStore.WPF
         private readonly RepositoryManager repositoryManager;
         private readonly NavigationService _navigationService;
         private readonly Staff _staff;
+        private int _pageActive = 0;
         public MainWindow(Staff staff)
         {
             InitializeComponent();
@@ -36,19 +37,12 @@ namespace EStore.WPF
             }
             btnLogout.Click += btnLogout_lick;
             repositoryManager = new RepositoryManager();
-            _navigationService = new NavigationService(repositoryManager,staff);
+            _navigationService = new NavigationService(repositoryManager, staff);
             setControl();
+            this.Loaded += MainWindow_Loading;
         }
         private void setControl()
         {
-            foreach (MenuItem item in mainMenu.Items)
-            {
-                if (item.Name == "Staff")
-                {
-                    item.Header = $"Staff({_staff.Name})";
-                    item.Foreground = Brushes.Red;
-                }
-            }
             // staff
             if (_staff.Role == 1)
             {
@@ -63,6 +57,14 @@ namespace EStore.WPF
                         item.IsEnabled = false;
                     }
                 }
+
+                foreach (MenuItem item in mainMenu.Items)
+                {
+                    if (item.Name == "Staff")
+                    {
+                        item.Header = $"Staff({_staff.Name})";
+                    }
+                }
             }
             // admin
             else if (_staff.Role == 0)
@@ -71,33 +73,71 @@ namespace EStore.WPF
                 {
                     item.IsEnabled = true;
                 }
+
+                foreach (MenuItem item in mainMenu.Items)
+                {
+                    if (item.Name == "Staff")
+                    {
+                        item.Header = $"Admin({_staff.Name})";
+                    }
+                }
             }
         }
 
-        public void menuItem_click(Object sender, RoutedEventArgs e)
+        public async void menuItem_click(Object sender, RoutedEventArgs e)
         {
             var item = (MenuItem)sender;
+            _pageActive = mainMenu.Items.IndexOf(sender);
             if (item != null)
             {
-                if (item.Name == "Product")
+                var page = item.Name switch
                 {
-                    frameMain.Content = _navigationService.GetPage("Product");
-                }
-                else if(item.Name == "Report")
+                    "Product" => _navigationService.GetPage("Product"),
+                    "Report" => _navigationService.GetPage("Report"),
+                    "Order" => _navigationService.GetPage("Order"),
+                    "Staff" => _navigationService.GetPage("Staff"),
+                    _ => null
+                };
+                if (page != null)
                 {
-                    frameMain.Content = _navigationService.GetPage("Report");
-                }
-                else if (item.Name == "Order")
-                {
-                    frameMain.Content = _navigationService.GetPage("Order");
-                }
-                else if (item.Name == "Staff")
-                {
-                    frameMain.Content = _navigationService.GetPage("Staff");
+                    frameMain.Content = page;
+                    PageActive();
                 }
             }
         }
-        public void btnLogout_lick(object sender,RoutedEventArgs e)
+
+        private async void MainWindow_Loading(object sender, RoutedEventArgs e)
+        {
+            loadingProgressBar.Visibility = Visibility.Visible;
+
+            // Perform loading logic asynchronously
+            await Task.Run(() => Load());
+
+            // Hide loading animation
+            loadingProgressBar.Visibility = Visibility.Collapsed;
+        }
+        private void Load()
+        {
+            Dispatcher.Invoke(() =>
+            {
+                frameMain.Content = _navigationService.GetPage("Product");
+                PageActive();
+            });
+        }
+        private void PageActive()
+        {
+            for (int i = 0; i < mainMenu.Items.Count; i++)
+            {
+                MenuItem menuItem = mainMenu.Items[i] as MenuItem;
+                if (menuItem != null)
+                {
+                    menuItem.Foreground = (_pageActive == i) ? Brushes.Red : Brushes.Black;
+                }
+            }
+        }
+
+
+        public void btnLogout_lick(object sender, RoutedEventArgs e)
         {
             if (_staff != null)
             {

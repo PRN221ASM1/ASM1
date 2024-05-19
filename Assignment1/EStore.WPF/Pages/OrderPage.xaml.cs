@@ -12,6 +12,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -25,21 +26,20 @@ namespace EStore.WPF.Pages
     {
         private readonly RepositoryManager _repo;
         private readonly Staff _staff;
-        public OrderPage(RepositoryManager repo,Staff staff)
+        public OrderPage(RepositoryManager repo, Staff staff)
         {
             InitializeComponent();
             _repo = repo;
             _staff = staff;
-
             this.Loaded += Load;
             orderListView.MouseDoubleClick += ItemOrderListView_SelectionChanged;
-            foreach(MenuItem item in menuCRUDOrder.Items)
+            foreach (MenuItem item in menuCRUDOrder.Items)
             {
                 item.Click += itemMenuCRUDOrder_click;
             }
             cobStaffs.SelectionChanged += CobSelection_chance;
             btnDateFilter.Click += BtnDateFilter_Click;
-            
+
         }
 
         private void BtnDateFilter_Click(object sender, RoutedEventArgs e)
@@ -52,6 +52,7 @@ namespace EStore.WPF.Pages
             SetControll();
             SetFilterOrder();
             ShowListOrder();
+
         }
         private void ShowListOrder()
         {
@@ -70,7 +71,7 @@ namespace EStore.WPF.Pages
                 {
                     orders = orders.Where(o => o.StaffId == _staff.StaffId).ToList();
                 }
-                else if(_staff.Role == 0)
+                else if (_staff.Role == 0)
                 {
                     if (staff.StaffId != 0)
                     {
@@ -94,9 +95,9 @@ namespace EStore.WPF.Pages
             cobStaffs.DisplayMemberPath = "Name";
             cobStaffs.SelectedIndex = 0;
         }
-        private void ItemOrderListView_SelectionChanged(Object sender,RoutedEventArgs e)
+        private void ItemOrderListView_SelectionChanged(Object sender, RoutedEventArgs e)
         {
-           try
+            try
             {
                 var order = orderListView.SelectedItem as Order;
                 orderDetailsListView.ItemsSource = _repo.OrderRepository.GeOrderDetails(order.OrderId);
@@ -107,27 +108,18 @@ namespace EStore.WPF.Pages
                 }
                 txtTotalPriceDetail.Text = total.ToString();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void SetControll()
         {
             if (_staff.Role == 1)
             {
-                foreach(MenuItem item in menuFilterOrders.Items)
-                {
-                    if (item.Name == "Staff")
-                    {
-                        item.IsEnabled = true;
-                    }
-                }
-            }
-            else if(_staff.Role == 0)
-            {
-                //
+                (menuFilterOrders.Items[1] as MenuItem).IsEnabled = false;
+                (menuCRUDOrder.Items[1]  as MenuItem).IsEnabled =false ;
+                (menuCRUDOrder.Items[2] as MenuItem).IsEnabled = false;
             }
         }
         private void itemMenuCRUDOrder_click(object sender, RoutedEventArgs e)
@@ -143,19 +135,45 @@ namespace EStore.WPF.Pages
                 case "Update":
                     break;
                 case "Delete":
+                    DeteleOrder();
                     break;
             }
         }
-
+        private void DeteleOrder()
+        {
+            try
+            {
+                var order = orderListView.SelectedItem as Order;
+                MessageBoxResult result2 = MessageBox.Show("Do you want to delete?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result2 == MessageBoxResult.Yes)
+                {
+                    int result = _repo.OrderRepository.Delete(order.OrderId);
+                    if (result != 0)
+                    {
+                        MessageBox.Show("Delete successs");
+                        ShowListOrder();
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void CreateOd_Closed(object? sender, EventArgs e)
         {
             StartDate.SelectedDate = DateTime.Now.AddDays(-4);
             EndtDate.SelectedDate = DateTime.Now;
             ShowListOrder();
         }
-        private void CobSelection_chance(object sender,RoutedEventArgs e)
+        private void CobSelection_chance(object sender, RoutedEventArgs e)
         {
             ShowListOrder();
         }
+
     }
 }

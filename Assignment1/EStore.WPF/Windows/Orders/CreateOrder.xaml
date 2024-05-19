@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:EStore.WPF.Windows.Orders"
         mc:Ignorable="d"
         Title="CreateOrder" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Grid">
+            <Setter  Property="Background"  Value="LightBlue"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="4*"/>
