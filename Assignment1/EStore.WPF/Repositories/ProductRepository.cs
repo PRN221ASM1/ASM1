@@ -60,5 +60,19 @@ namespace EStore.WPF.Repositories
                 return _context.Products.Include(p => p.Category).ToList();
             }
         }
+
+        public IList<Product> SearchByName(string searchText)
+        {
+            // Converts entered product names to lower case for case-insensitive search
+            searchText = searchText.ToLower();
+
+            // Filter product list based on product name
+            var filteredProducts = _context.Products
+                                    .Include(p => p.Category)
+                                    .Where(p => p.ProductName.ToLower().Contains(searchText))
+                                    .ToList();
+
+            return filteredProducts;
+        }
     }
 }
