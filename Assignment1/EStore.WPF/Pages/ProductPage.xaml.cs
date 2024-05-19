@@ -1,5 +1,6 @@
 ﻿using EStore.WPF.Models;
 using EStore.WPF.Repositories;
+
 using System;
 using System.Collections.Generic;
 using System.DirectoryServices.ActiveDirectory;
@@ -55,14 +56,66 @@ namespace EStore.WPF.Pages
             }
         }
 
-        private void searchButton_Click(object sender, RoutedEventArgs e)
+        private void clearButton_Click(object sender, RoutedEventArgs e)
         {
-
+            productIdTextBox.Text = string.Empty;
+            productNameTextBox.Text = string.Empty;
+            unitPriceTextBox.Text = string.Empty;
+            categoryComboBox.SelectedIndex = -1; // Đặt lại selectedIndex để xóa chọn mục trong combobox
+            productListView.SelectedItem = null; // Xóa chọn hàng trong ListView
         }
 
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new AddProductPage(_repo));
+            try
+            {
+                // Kiểm tra xem liệu các trường thông tin đã được nhập đầy đủ hay không
+                if (string.IsNullOrWhiteSpace(productNameTextBox.Text) ||
+                    string.IsNullOrWhiteSpace(unitPriceTextBox.Text) ||
+                    categoryComboBox.SelectedItem == null)
+                {
+                    MessageBox.Show("Please fill in all fields!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return; // Dừng việc thêm sản phẩm nếu có lỗi
+                }
+
+                // Kiểm tra xem giá trị của Unit Price có phải là một số hợp lệ không
+                if (!decimal.TryParse(unitPriceTextBox.Text, out decimal unitPrice))
+                {
+                    MessageBox.Show("Unit Price must be a valid number!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return; // Dừng việc thêm sản phẩm nếu có lỗi
+                }
+
+                // Tạo đối tượng Product mới từ dữ liệu nhập vào
+                var newProduct = new Product
+                {
+                    ProductName = productNameTextBox.Text,
+                    Category = (Category)categoryComboBox.SelectedItem,
+                    UnitPrice = (int)unitPrice
+                };
+
+                // Thêm sản phẩm mới vào cơ sở dữ liệu
+                int addResult = _repo.ProductRepository.Add(newProduct);
+                if (addResult > 0)
+                {
+                    MessageBox.Show("Product added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // Xóa nội dung của các TextBox và ComboBox sau khi thêm sản phẩm thành công
+                    productNameTextBox.Text = string.Empty;
+                    unitPriceTextBox.Text = string.Empty;
+                    categoryComboBox.SelectedIndex = -1;
+
+                    // Cập nhật danh sách sản phẩm trên trang ProductPage
+                    LoadProducts();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add product.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void editButton_Click(object sender, RoutedEventArgs e)
@@ -137,5 +190,9 @@ namespace EStore.WPF.Pages
             var filteredProducts = _repo.ProductRepository.SearchByName(searchText);
             productListView.ItemsSource = filteredProducts;
         }
+
+
+       
+        
     }
 }

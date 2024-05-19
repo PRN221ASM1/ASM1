@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\SE 7\\ASM1\\Assignment1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|d:\\se 7\\asm1\\assignment1\\estore.wpf\\pages\\addproductpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\addproductpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|d:\\se 7\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|d:\\se 7\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|d:\\se 7\\asm1\\assignment1\\estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\productpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|d:\\se 7\\asm1\\assignment1\\estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\staffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|d:\\se 7\\asm1\\assignment1\\estore.wpf\\pages\\addproductpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\pages\\addproductpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|d:\\se 7\\asm1\\assignment1\\estore.wpf\\repositories\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF0C6C0-44D1-423D-BB58-690FFB3E7AF6}|EStore.WPF\\EStore.WPF.csproj|solutionrelative:estore.wpf\\repositories\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 269,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,40 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddProductPage.xaml.cs",
-              "DocumentMoniker": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\AddProductPage.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\AddProductPage.xaml.cs",
-              "ToolTip": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\AddProductPage.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\Pages\\AddProductPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T07:31:21.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddProductPage.xaml",
-              "DocumentMoniker": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\AddProductPage.xaml",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\AddProductPage.xaml",
-              "ToolTip": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\AddProductPage.xaml",
-              "RelativeToolTip": "EStore.WPF\\Pages\\AddProductPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T07:30:55.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductPage.xaml.cs",
-              "DocumentMoniker": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "ToolTip": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAIwAAAABAAAA",
+              "Title": "StaffPage.xaml.cs",
+              "DocumentMoniker": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "ToolTip": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "RelativeToolTip": "EStore.WPF\\Pages\\StaffPage.xaml.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAFAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T07:30:19.867Z",
+              "WhenOpened": "2024-05-19T09:33:58.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Repositories\\interface\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Repositories\\interface\\IProductRepository.cs",
+              "ToolTip": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Repositories\\interface\\IProductRepository.cs",
+              "RelativeToolTip": "EStore.WPF\\Repositories\\interface\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:18:25.456Z",
               "EditorCaption": ""
             },
             {
@@ -79,7 +67,20 @@
               "ToolTip": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml",
               "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T07:29:44.347Z",
+              "WhenOpened": "2024-05-19T08:19:17.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductPage.xaml.cs",
+              "DocumentMoniker": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
+              "RelativeDocumentMoniker": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
+              "ToolTip": "D:\\SE 7\\ASM1\\Assignment1\\EStore.WPF\\Pages\\ProductPage.xaml.cs",
+              "RelativeToolTip": "EStore.WPF\\Pages\\ProductPage.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAH4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T08:18:58.107Z",
               "EditorCaption": ""
             }
           ]
