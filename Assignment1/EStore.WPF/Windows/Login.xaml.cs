@@ -36,6 +36,7 @@ namespace EStore.WPF.Windows
             if (authenticatedStaff != null)
             {
                 var mainWindow = new MainWindow(authenticatedStaff);
+                mainWindow.WindowState = WindowState.Maximized;
                 mainWindow.Show();
                 this.Close();
             }
