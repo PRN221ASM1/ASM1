@@ -42,6 +42,7 @@ namespace EStore.WPF.Pages
             
         }
 
+
         private void BtnDateFilter_Click(object sender, RoutedEventArgs e)
         {
             ShowListOrder();
