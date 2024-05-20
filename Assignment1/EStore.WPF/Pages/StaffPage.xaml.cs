@@ -60,6 +60,11 @@ namespace EStore.WPF.Pages
                     MessageBox.Show("Name is exists");
                     return;
                 }
+                if(string.IsNullOrWhiteSpace(txtName.Text.Trim()) || string.IsNullOrWhiteSpace(txtPassword.Text.Trim()))
+                {
+                    MessageBox.Show("Input all fields");
+                    return;
+                }
                 Staff staff = new Staff
                 {
                     //StaffId = int.Parse(txtStaffId.Text),
