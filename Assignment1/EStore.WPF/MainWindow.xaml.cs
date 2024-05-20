@@ -38,8 +38,7 @@ namespace EStore.WPF
             btnLogout.Click += btnLogout_lick;
             repositoryManager = new RepositoryManager();
             _navigationService = new NavigationService(repositoryManager, staff);
-            setControl();
-            this.Loaded += MainWindow_Loading;
+            this.Loaded += Load;
         }
         private void setControl()
         {
@@ -84,7 +83,7 @@ namespace EStore.WPF
             }
         }
 
-        public async void menuItem_click(Object sender, RoutedEventArgs e)
+        public void menuItem_click(Object sender, RoutedEventArgs e)
         {
             var item = (MenuItem)sender;
             _pageActive = mainMenu.Items.IndexOf(sender);
@@ -106,23 +105,12 @@ namespace EStore.WPF
             }
         }
 
-        private async void MainWindow_Loading(object sender, RoutedEventArgs e)
+        private void Load(object sender,RoutedEventArgs e)
         {
-            loadingProgressBar.Visibility = Visibility.Visible;
+            setControl();
+            PageActive();
+            frameMain.Content = _navigationService.GetPage("Product");
 
-            // Perform loading logic asynchronously
-            await Task.Run(() => Load());
-
-            // Hide loading animation
-            loadingProgressBar.Visibility = Visibility.Collapsed;
-        }
-        private void Load()
-        {
-            Dispatcher.Invoke(() =>
-            {
-                frameMain.Content = _navigationService.GetPage("Product");
-                PageActive();
-            });
         }
         private void PageActive()
         {

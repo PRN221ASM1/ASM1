@@ -52,12 +52,12 @@
         </Grid>
         <Grid Grid.Row="1" x:Name="gridMain">
             <Frame x:Name="frameMain" VerticalAlignment="Stretch" NavigationUIVisibility="Hidden"/>
-            <ProgressBar x:Name="loadingProgressBar"
-             IsIndeterminate="True"
-             Width="200" Height="20"
-             VerticalAlignment="Center"
-             HorizontalAlignment="Center"
-             Visibility="Collapsed"/>
+            <ProgressBar  x:Name="loadingProgressBar" IsIndeterminate="True" Width="200" Height="20"
+                          VerticalAlignment="Top" 
+                          HorizontalAlignment="Center"
+                          Visibility="Collapsed" Margin="0,141,0,0"/>
+
+
 
         </Grid>
 
