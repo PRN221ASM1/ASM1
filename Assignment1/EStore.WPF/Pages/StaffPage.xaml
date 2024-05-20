@@ -7,7 +7,11 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="StaffPage">
-
+    <Page.Resources>
+    <Style TargetType="Grid">
+        <Setter Property="Margin" Value="10"/>
+    </Style>
+    </Page.Resources>
     <Grid Margin="10,10,10,10" Background="LightBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="4*"/>
@@ -20,7 +24,7 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Width="200">
                 <Label Content="StaffId"></Label> 
-                <TextBox x:Name="txtStaffId"></TextBox>
+                <TextBox x:Name="txtStaffId" IsReadOnly="True"></TextBox>
                 <Label Content="Name"></Label>
                 <TextBox x:Name="txtName"></TextBox>
                 <Label Content="Password"></Label>
@@ -44,7 +48,7 @@
                 <ListView x:Name="staffListView" SelectionChanged="lstMember_SelectionChanged">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="StaffId" DisplayMemberBinding="{Binding StaffId}" Width="100"/>
+                            <GridViewColumn Header="StaffId" DisplayMemberBinding="{Binding StaffId}" Width="100" />
                             <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="150"/>
                             <GridViewColumn Header="Password" DisplayMemberBinding="{Binding Password}" Width="150"/>
                         </GridView>

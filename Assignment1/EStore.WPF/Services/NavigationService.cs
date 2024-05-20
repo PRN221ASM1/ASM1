@@ -2,15 +2,16 @@
 using EStore.WPF.Pages;
 using System.Windows.Controls;
 using EStore.WPF.Models;
+using EStore.WPF.Repositories;
 
-namespace EStore.WPF
+namespace EStore.WPF.Services
 {
     public class NavigationService
     {
         private readonly Dictionary<string, Page> _pages = new Dictionary<string, Page>();
         private readonly RepositoryManager _repositoryManager;
         private readonly Staff _staff;
-        public NavigationService(RepositoryManager repositoryManager,Staff staff)
+        public NavigationService(RepositoryManager repositoryManager, Staff staff)
         {
             _repositoryManager = repositoryManager;
             _staff = staff;

@@ -1,4 +1,5 @@
 ﻿using EStore.WPF.Models;
+using EStore.WPF.Services;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;

@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using EStore.WPF.Models;
 using EStore.WPF.Pages;
 using EStore.WPF.Repositories;
+using EStore.WPF.Services;
 using EStore.WPF.Windows;
 namespace EStore.WPF
 {
