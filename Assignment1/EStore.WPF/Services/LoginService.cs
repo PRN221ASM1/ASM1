@@ -1,4 +1,5 @@
 ﻿using EStore.WPF.Models;
+using EStore.WPF.Repositories;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EStore.WPF
+namespace EStore.WPF.Services
 {
     public class LoginService
     {
@@ -39,10 +40,5 @@ namespace EStore.WPF
 
             return staff;
         }
-
-
     }
-
-
-
 }

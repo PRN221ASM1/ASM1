@@ -1,5 +1,6 @@
 ﻿using EStore.WPF.Models;
 using EStore.WPF.Pages;
+using EStore.WPF.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
