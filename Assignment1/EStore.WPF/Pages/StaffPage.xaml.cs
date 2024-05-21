@@ -24,6 +24,7 @@ namespace EStore.WPF.Pages
     public partial class StaffPage : Page
     {
         private readonly RepositoryManager _repo;
+
         private readonly Staff _staff;
         public StaffPage(RepositoryManager repo, Staff staff)
         {
