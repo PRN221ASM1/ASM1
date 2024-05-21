@@ -48,13 +48,19 @@ namespace EStore.WPF
             {
                 foreach (MenuItem item in mainMenu.Items)
                 {
-                    if (item.Name == "Product" || item.Name == "Order" || item.Name == "Staff")
+                    if (item.Name == "Order" || item.Name == "Staff" || item.Name == "Report")
                     {
                         item.IsEnabled = true;
+                        item.Visibility = Visibility.Visible;
+                    }
+                    else if (item.Name == "Product") 
+                    {
+                        item.Visibility = Visibility.Collapsed; 
                     }
                     else
                     {
                         item.IsEnabled = false;
+                        item.Visibility = Visibility.Collapsed;
                     }
                 }
 
@@ -62,27 +68,47 @@ namespace EStore.WPF
                 {
                     if (item.Name == "Staff")
                     {
-                        item.Header = $"Staff({_staff.Name})";
+                        item.Header = $"Profile";
                     }
                 }
             }
+            // admin
             // admin
             else if (_staff.Role == 0)
             {
                 foreach (MenuItem item in mainMenu.Items)
                 {
-                    item.IsEnabled = true;
+                    if (item.Name == "Order") // If the menu item is "Order"
+                    {
+                        item.Visibility = Visibility.Collapsed; // Hide it for admin users
+                    }
+                    else
+                    {
+                        item.IsEnabled = true;
+                        item.Visibility = Visibility.Visible;
+                    }
                 }
+
+                // Show the admin profile menu item
+                AdminProfilePage.Visibility = Visibility.Visible;
 
                 foreach (MenuItem item in mainMenu.Items)
                 {
                     if (item.Name == "Staff")
                     {
-                        item.Header = $"Admin({_staff.Name})";
+                        item.Header = $"Staff";
                     }
                 }
             }
+
         }
+
+        public void AdminProfilePage_Click(Object sender, RoutedEventArgs e)
+        {
+            // Open the admin profile page
+            frameMain.Content = _navigationService.GetPage("AdminProfilePage");
+        }
+
 
         public void menuItem_click(Object sender, RoutedEventArgs e)
         {
@@ -96,6 +122,7 @@ namespace EStore.WPF
                     "Report" => _navigationService.GetPage("Report"),
                     "Order" => _navigationService.GetPage("Order"),
                     "Staff" => _navigationService.GetPage("Staff"),
+                    "AdminProfilePage" => _navigationService.GetPage("AdminProfilePage"), 
                     _ => null
                 };
                 if (page != null)
@@ -105,6 +132,7 @@ namespace EStore.WPF
                 }
             }
         }
+
 
         private void Load(object sender,RoutedEventArgs e)
         {
@@ -130,7 +158,6 @@ namespace EStore.WPF
         {
             if (_staff != null)
             {
-
                 Window Login = new Login();
                 Login.Show();
                 this.Close();
