@@ -627,3 +627,5 @@ C:\Users\quany\OneDrive\Documents\SE\PRN221\Assignment 1\ASM1\Assignment1\EStore
 C:\Users\quany\OneDrive\Documents\SE\PRN221\Assignment 1\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\EStore.WPF.pdb
 C:\Users\quany\OneDrive\Documents\SE\PRN221\Assignment 1\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\EStore.WPF.genruntimeconfig.cache
 C:\Users\quany\OneDrive\Documents\SE\PRN221\Assignment 1\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\ref\EStore.WPF.dll
+E:\PRN221\project\git\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\Pages\AdminProfilePage.g.cs
+E:\PRN221\project\git\ASM1\Assignment1\EStore.WPF\obj\Debug\net6.0-windows\Pages\AdminProfilePage.baml

@@ -5,109 +5,119 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EStore.WPF.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="OrderPage">
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="OrderPage" Loaded="Load">
     <Page.Resources>
-        <!-- Style for Grid -->
         <Style TargetType="Grid">
-            <Setter Property="Margin" Value="10"/>
+            <Setter  Property="Margin" Value="10"/>
         </Style>
-        <!-- Style for Menu -->
-        <Style TargetType="MenuItem">
-            <Setter Property="Margin" Value="1,0,2,0"/>
-        </Style>
-        <!-- Style for ComboBox -->
-        <Style TargetType="ComboBox">
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="BorderBrush" Value="Gray"/>
+        <Style  TargetType="GroupBox">
+            <Setter Property="Background" Value="White"/>
         </Style>
     </Page.Resources>
-    <Grid Background="LightBlue">
+    <Grid  Background="White" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
             <RowDefinition Height="6*"/>
+            <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Grid.Column="0" >
+        <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="5*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Row="0" Grid.Column="0">
-
-            </Grid>
-            <Grid Grid.Row="0" Grid.Column="1">
-                <StackPanel  HorizontalAlignment="Center">
-                    <Menu x:Name="menuCRUDOrder">
-                        <MenuItem Header="Add" Name="Add"/>
-                        <MenuItem Header="Update" Name="Update"/>
-                        <MenuItem Header="Delete" Name="Delete"/>
-                    </Menu>
+            <StackPanel Grid.Row="0" Grid.Column="0">
+                <StackPanel>
+                    <GroupBox  Header="Date">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Horizontal">
+                                <Label  Content="Start"/>
+                                <DatePicker x:Name="pickerStartDate" SelectedDateChanged="DateChanged"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label  Content="End"/>
+                                <DatePicker x:Name="pickerEndDate" SelectedDateChanged="DateChanged"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
                 </StackPanel>
-            </Grid>
-            <Grid Grid.Row="0" Grid.Column="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="7*"/>
-                    <RowDefinition Height="3*"/>
-                </Grid.RowDefinitions>
-                <StackPanel  Grid.Row="0">
-                    <ListView x:Name="orderDetailsListView" Height="120" >
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Header="OrderDetail ID" DisplayMemberBinding="{Binding OrderDetailId}" Width="80"/>
-                                <GridViewColumn Header="Product ID" DisplayMemberBinding="{Binding ProductId}" Width="80"/>
-                                <GridViewColumn Header="Product Name" DisplayMemberBinding="{Binding Product.ProductName}" Width="80"/>
-                                <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="80"/>
-                                <GridViewColumn Header="Price" DisplayMemberBinding="{Binding UnitPrice}" Width="80"/>
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
+                <StackPanel>
+                    <GroupBox Header="Create Order">
+                        <StackPanel Margin="0,0,0,0" Height="168">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="5*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="5">
+                                    <Label Content="Id" Width="80"/>
+                                    <TextBox x:Name="txtProductId" Width="130"/>
+                                </StackPanel>
+                                <StackPanel  Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="5">
+                                    <Label Content="Name" Width="80"/>
+                                    <TextBox x:Name="txtProductName" Width="130"/>
+                                </StackPanel>
+                                <StackPanel  Grid.Row="1" Grid.Column="0" Orientation="Horizontal"  Margin="5">
+                                    <Label Content="Quantity" Width="80"/>
+                                    <TextBox x:Name="txtQuantity" Width="130"/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="5">
+                                    <Label Content="UnitPrice" Width="80"/>
+                                    <TextBox x:Name="txtUnitPrice" Width="130"/>
+                                </StackPanel>
+                            </Grid>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Content="Check" Margin="10,0,10,0" Click="CheckProduct"/>
+                                <Button Content="Add Detail" Margin="10,0,10,0" Click="AddProductDetail"/>
+                                <Button Content="Order"  Margin="10,0,10,0" Click="CreateOrder" />
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
                 </StackPanel>
-                <StackPanel Grid.Row="1"  Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Label Content="Total" Width="50" MaxHeight="30"></Label>
-                    <TextBox Width="100" x:Name="txtTotalPriceDetail" MaxHeight="30" Margin="0,5,0,10" HorizontalContentAlignment="Center"/>
-                </StackPanel>
-            </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="1">
+                <GroupBox Header="Order  Details">
+                    <StackPanel>
+                        <DataGrid x:Name="dataGridOrderDetails" AutoGenerateColumns="False" Margin="10" CanUserAddRows="False" Height="170">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="OrderDetail ID" Binding="{Binding OrderDetailId}" Width="*"/>
+                                <DataGridTextColumn Header="Product ID" Binding="{Binding ProductId}" Width="*"/>
+                                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*"/>
+                                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Label Content="Total: " x:Name="lableTotal"  Width="80" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                </GroupBox>
+                
+            </StackPanel>
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="1">
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="98*"/>
-                    <ColumnDefinition Width="149*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition  Height="9*"/>
-                </Grid.RowDefinitions>
-                <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,196" Grid.RowSpan="2">
-                    <Menu x:Name="menuFilterOrders" Width="200" HorizontalAlignment="Left">
-                        <MenuItem Header="Date"  Name="Date">
-                            <Label  Content="Start" Height="30"/>
-                            <DatePicker x:Name="StartDate" Height="25" />
-                            <Label  Content="End" Height="30"/>
-                            <DatePicker x:Name="EndtDate" Height="25"/>
-                            <Button x:Name="btnDateFilter" Content="Save" Height="25"/>
-                        </MenuItem>
-                        <MenuItem Header="Staff" Name="Staff">
-                            <ComboBox  x:Name="cobStaffs" SelectedIndex="0"/>
-                        </MenuItem>
-                    </Menu>
-                </StackPanel>
-                <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
-                    <ListView x:Name="orderListView" Grid.Row="1" MinHeight="230" MaxHeight="230">
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Header="Order ID" DisplayMemberBinding="{Binding OrderId}" Width="100"/>
-                                <GridViewColumn Header="OrderDate" DisplayMemberBinding="{Binding OrderDate}" Width="150"/>
-                                <GridViewColumn Header="Staff Name" DisplayMemberBinding="{Binding Staff.Name}" Width="150"/>
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
-                </StackPanel>
-            </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel>
+                <GroupBox  Header="Orders">
+                    <DataGrid x:Name="dataGridOrders" AutoGenerateColumns="False"  CanUserAddRows="False" Height="170">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="OrderId" Binding="{Binding OrderId}" Width="*"/>
+                            <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate}" Width="*"/>
+                            <DataGridTemplateColumn Header="Actions" Width="*">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Button Content="Delete" Click="OrdersActionsClick" Tag="Delete"/>
+                                            <Button Content="Update" Click="OrdersActionsClick" Tag="Update"/>
+                                            <Button Content="Details" Click="OrdersActionsClick" Tag="Detail" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </GroupBox>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

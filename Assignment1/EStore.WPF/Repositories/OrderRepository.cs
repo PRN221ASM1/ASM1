@@ -58,7 +58,7 @@ namespace EStore.WPF.Repositories
         }
         public List<Order> GetOrderByDate(DateTime from, DateTime to)
         {
-            List<Order> orders = _context.Orders.Where(o => o.OrderDate >= from && o.OrderDate <= to).ToList();
+            List<Order> orders = _context.Orders.Where(o => o.OrderDate.Date >= from.Date && o.OrderDate.Date <= to.Date).ToList();
             return orders;
         }
         public List<OrderDetail> GeOrderDetails(int orderId)

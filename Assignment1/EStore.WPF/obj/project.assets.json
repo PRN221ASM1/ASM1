@@ -2278,19 +2278,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\quany\\.nuget\\packages\\": {}
+    "C:\\Users\\LINH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+      "projectUniqueName": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
       "projectName": "EStore.WPF",
-      "projectPath": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
-      "packagesPath": "C:\\Users\\quany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quany\\OneDrive\\Documents\\SE\\PRN221\\Assignment 1\\ASM1\\Assignment1\\EStore.WPF\\obj\\",
+      "projectPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\EStore.WPF.csproj",
+      "packagesPath": "C:\\Users\\LINH\\.nuget\\packages\\",
+      "outputPath": "E:\\PRN221\\project\\git\\ASM1\\Assignment1\\EStore.WPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\quany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2349,7 +2349,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
