@@ -85,35 +85,7 @@ namespace EStore.WPF.Pages
             }
         }
 
-        //private void btnUpdate_Click(object sender, RoutedEventArgs e)
-        //{
-        //    if (lstMember_SelectionChanged == null)
-        //    {
-        //        MessageBox.Show("Please select item");
-        //    }
-        //    if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
-        //    {
-        //        MessageBox.Show("Please input all fields.");
-        //        return;
-        //    }
-        //    try
-        //    {
-        //        Staff staff = (Staff)staffListView.SelectedItem;
-        //        //staff.StaffId = int.Parse(txtStaffId.Text);
-        //        staff.Name = txtName.Text;
-        //        staff.Password = txtPassword.Text;
-        //        int result = _repo.StaffRepository.Update(staff);
-        //        if (result > 0)
-        //        {
-        //            MessageBox.Show("Updated");
-        //            staffListView.ItemsSource = _repo.StaffRepository.FindAll();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
+
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
@@ -187,15 +159,7 @@ namespace EStore.WPF.Pages
                 txtPassword.Text = staff.Password;
             }
         }
-        //private void Load(object sender, RoutedEventArgs e)
-        //{
-        //    var staff = _repo.StaffRepository.FindAll();
-        //    if (staff != null)
-        //    {
-        //        staffListView.ItemsSource = staff;
-        //    }
-        //}
-
+        
         private void Load(object sender, RoutedEventArgs e)
         {
             if (_staff.Role == 1)

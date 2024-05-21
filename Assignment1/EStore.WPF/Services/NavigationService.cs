@@ -19,6 +19,8 @@ namespace EStore.WPF.Services
 
         public Page GetPage(string name)
         {
+            System.Diagnostics.Debug.WriteLine($"Getting page: {name}");
+
             if (_pages.ContainsKey(name))
             {
                 return _pages[name];
@@ -39,10 +41,17 @@ namespace EStore.WPF.Services
                 case "Staff":
                     page = new StaffPage(_repositoryManager, _staff);
                     break;
+                case "AdminProfilePage":
+                    page = new AdminProfilePage(_staff, _repositoryManager);
+                    break;
+
                 default:
                     throw new ArgumentException($"Page with name '{name}' not found.");
             }
             _pages[name] = page;
+
+            System.Diagnostics.Debug.WriteLine($"Page created: {name}");
+
             return page;
         }
     }
