@@ -36,6 +36,7 @@ namespace EStore.WPF.Pages
         }
         public void Load(object sender, RoutedEventArgs e)
         {
+            pickerStartDate.SelectedDate = DateTime.Now;
             LoadDataGridOrders();
         }
         private void OrdersActionsClick(object sender, RoutedEventArgs e)
@@ -60,8 +61,7 @@ namespace EStore.WPF.Pages
         private void LoadDataGridOrders()
         {
             DateTime start = pickerStartDate.SelectedDate ?? DateTime.Now;
-            DateTime end = pickerEndDate.SelectedDate ?? DateTime.Now;
-            var orders = _repo.OrderRepository.GetOrderByDate(start, end);
+            var orders = _repo.OrderRepository.GetOrderByDate(start);
             dataGridOrders.ItemsSource = null;
             dataGridOrders.ItemsSource = orders;
         }
@@ -76,6 +76,7 @@ namespace EStore.WPF.Pages
                 total += (item.Quantity * item.UnitPrice);
             }
             lableTotal.Content = $"Total: {total}$";
+            actionsColumn.Visibility = Visibility.Collapsed;
         }
         private void LoadDetailOrder()
         {
@@ -89,6 +90,7 @@ namespace EStore.WPF.Pages
             }
             
             lableTotal.Content = $"Total: {total}$";
+            actionsColumn.Visibility = Visibility.Visible;
         }
         private bool DeleteOrder(Order? order)
         {
@@ -125,13 +127,15 @@ namespace EStore.WPF.Pages
             try
             {
                 int pId = int.Parse(txtProductId.Text);
+                Product p = _repo.ProductRepository.FindById(pId);
                 OrderDetail dl = new OrderDetail()
                 {
                     OrderDetailId =0,
                     OrderId = 0,
                     ProductId = pId,
                     Quantity = int.Parse(txtQuantity.Text),
-                    UnitPrice = int.Parse(txtUnitPrice.Text)
+                    UnitPrice = int.Parse(txtUnitPrice.Text),
+                    Product = p
                 };
                 _orderDetails.Add(dl);
                 LoadDetailOrder();
@@ -155,6 +159,7 @@ namespace EStore.WPF.Pages
                 {
                     _orderDetails.Clear();
                     MessageBox.Show("Create success");
+                    LoadDataGridOrders();
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
@@ -172,7 +177,11 @@ namespace EStore.WPF.Pages
                     {
                         case "Delete":
                             // Remove the selected OrderDetail from the list
-                            _orderDetails.RemoveAt(index);
+                            try
+                            {
+                                _orderDetails.RemoveAt(index);
+                            }
+                            catch { return; }
                             LoadDetailOrder();
                             break;
                         default:
@@ -205,6 +214,27 @@ namespace EStore.WPF.Pages
             }
             LoadDetailOrder();
         }
-
+        private void dataChangeCheckProduct(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int pId = int.Parse(txtProductId.Text);
+                Product p = _repo.ProductRepository.FindById(pId);
+                if (p != null)
+                {
+                    txtProductName.Text = p.ProductName;
+                    txtQuantity.Text = "1";
+                    txtUnitPrice.Text = p.UnitPrice.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Can not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
     }
 }

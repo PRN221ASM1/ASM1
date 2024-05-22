@@ -56,9 +56,9 @@ namespace EStore.WPF.Repositories
             int result = _context.SaveChanges();
             return result;
         }
-        public List<Order> GetOrderByDate(DateTime from, DateTime to)
+        public List<Order> GetOrderByDate(DateTime date)
         {
-            List<Order> orders = _context.Orders.Where(o => o.OrderDate.Date >= from.Date && o.OrderDate.Date <= to.Date).ToList();
+            List<Order> orders = _context.Orders.Where(o=>o.OrderDate.Date == date.Date).ToList();
             return orders;
         }
         public List<OrderDetail> GeOrderDetails(int orderId)

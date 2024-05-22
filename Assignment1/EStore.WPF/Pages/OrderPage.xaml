@@ -30,12 +30,8 @@
                     <GroupBox  Header="Date">
                         <StackPanel Orientation="Horizontal">
                             <StackPanel Orientation="Horizontal">
-                                <Label  Content="Start"/>
+                                <Label  Content="Date"/>
                                 <DatePicker x:Name="pickerStartDate" SelectedDateChanged="DateChanged"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <Label  Content="End"/>
-                                <DatePicker x:Name="pickerEndDate" SelectedDateChanged="DateChanged"/>
                             </StackPanel>
                         </StackPanel>
                     </GroupBox>
@@ -53,8 +49,8 @@
                                     <ColumnDefinition Width="5*"/>
                                 </Grid.ColumnDefinitions>
                                 <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="5">
-                                    <Label Content="Id" Width="60"/>
-                                    <TextBox x:Name="txtProductId" Width="120"/>
+                                    <Label Content="ProductId" Width="60"/>
+                                    <TextBox x:Name="txtProductId" Width="120" TextChanged="dataChangeCheckProduct"/>
                                 </StackPanel>
                                 <StackPanel  Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="5">
                                     <Label Content="Name" Width="60"/>
@@ -70,9 +66,8 @@
                                 </StackPanel>
                             </Grid>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button Content="Check" Margin="10,0,10,0" Click="CheckProduct"/>
                                 <Button Content="Add Detail" Margin="10,0,10,0" Click="AddProductDetail"/>
-                                <Button Content="Order"  Margin="10,0,10,0" Click="CreateOrder" />
+                                <Button Content="Order" Click="CreateOrder" HorizontalAlignment="Left" />
                             </StackPanel>
                         </StackPanel>
                     </GroupBox>
@@ -81,13 +76,13 @@
             <StackPanel Grid.Row="0" Grid.Column="1">
                 <GroupBox Header="Order  Details">
                     <StackPanel>
-                        <DataGrid x:Name="dataGridOrderDetails" AutoGenerateColumns="False" Margin="10" CanUserAddRows="False" Height="170">
+                        <DataGrid x:Name="dataGridOrderDetails" AutoGenerateColumns="False" CanUserAddRows="False" Height="170">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="OrderDetail ID" Binding="{Binding OrderDetailId}" Width="*"/>
                                 <DataGridTextColumn Header="Product" Binding="{Binding Product.ProductName}" Width="*"/>
                                 <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*"/>
                                 <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice}" Width="*"/>
-                                <DataGridTemplateColumn Header="Actions" Width="*">
+                                <DataGridTemplateColumn Header="Actions" Width="*" x:Name="actionsColumn">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -101,7 +96,7 @@
                         <Label Content="Total: " x:Name="lableTotal"  Width="80" HorizontalAlignment="Right"/>
                     </StackPanel>
                 </GroupBox>
-                
+
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
