@@ -53,9 +53,8 @@ namespace EStore.WPF.Pages
         {
             try
             {
-                DateTime start = StartDate.SelectedDate.Value;
-                DateTime end = EndtDate.SelectedDate.Value;
-                var orders = _repo.OrderRepository.GetOrderByDate(start, end);
+                DateTime date = StartDate.SelectedDate.Value;
+                var orders = _repo.OrderRepository.GetOrderByDate(date);
                 if (cobStaffs.SelectedItem == null)
                 {
                     cobStaffs.SelectedIndex = 0;
