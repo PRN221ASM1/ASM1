@@ -26,12 +26,13 @@ namespace EStore.WPF.Pages
     {
         private readonly RepositoryManager _repo;
         private readonly Staff _staff;
-        private readonly Order _order = new Order ();
+        private readonly List<OrderDetail> _orderDetails;
         public OrderPage(RepositoryManager repo, Staff staff)
         {
             InitializeComponent();
             _repo = repo;
             _staff = staff;
+            _orderDetails = new List<OrderDetail>();
         }
         public void Load(object sender, RoutedEventArgs e)
         {
@@ -80,12 +81,13 @@ namespace EStore.WPF.Pages
         {
             
             dataGridOrderDetails.ItemsSource = null;
-            dataGridOrderDetails.ItemsSource = _order.OrderDetails;
+            dataGridOrderDetails.ItemsSource = _orderDetails;
             int total = 0;
-            foreach (var item in _order.OrderDetails)
+            foreach (var item in _orderDetails)
             {
                 total += (item.Quantity * item.UnitPrice);
             }
+            
             lableTotal.Content = $"Total: {total}$";
         }
 
@@ -132,11 +134,7 @@ namespace EStore.WPF.Pages
                     Quantity = int.Parse(txtQuantity.Text),
                     UnitPrice = int.Parse(txtUnitPrice.Text)
                 };
-                if (_order.OrderDetails == null)
-                {
-                    _order.OrderDetails = new List<OrderDetail>();
-                }
-                _order.OrderDetails.Add(dl);
+                _orderDetails.Add(dl);
                 LoadDetailOrder();
             }
             catch(Exception ex)
@@ -147,17 +145,67 @@ namespace EStore.WPF.Pages
         private void CreateOrder(object sender,RoutedEventArgs e)
         {
             try
+            {  Order order = new Order()
             {
-                _order.StaffId = _staff.StaffId;
-                _order.OrderDate = DateTime.Now;
-                int result = _repo.OrderRepository.Add(_order);
+                StaffId = _staff.StaffId,
+                OrderDate = DateTime.Now,
+                OrderDetails = _orderDetails.ToList()
+            };
+                int result = _repo.OrderRepository.Add(order);
                 if (result != 0)
                 {
-                    _order.OrderDetails = null;
+                    _orderDetails.Clear();
                     MessageBox.Show("Create success");
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
+        private void OrdersDetailActionsClick(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                // Ensure that the DataGrid has a selected item
+                if (dataGridOrderDetails.SelectedItem is OrderDetail odl && dataGridOrderDetails.SelectedIndex >= 0)
+                {
+                    int index = dataGridOrderDetails.SelectedIndex;
+
+                    switch (button.Tag.ToString())
+                    {
+                        case "Delete":
+                            // Remove the selected OrderDetail from the list
+                            _orderDetails.RemoveAt(index);
+                            LoadDetailOrder();
+                            break;
+                        default:
+                            MessageBox.Show("Unknown action");
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No item selected or invalid selection.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid sender.");
+            }
+        }
+        private void OrdersDetailActionsClick(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            OrderDetail odl = dataGridOrderDetails.SelectedItem as OrderDetail;
+            int index = dataGridOrderDetails.SelectedIndex;
+            if (e.Column.DisplayIndex == 2)
+            {
+                TextBox textBox = e.EditingElement as TextBox;
+                if (textBox != null)
+                {
+                   odl.Quantity = int.Parse(textBox.Text);
+                    _orderDetails[index] = odl;
+                }
+            }
+            LoadDetailOrder();
+        }
+
     }
 }
