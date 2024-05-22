@@ -53,20 +53,20 @@
                                     <ColumnDefinition Width="5*"/>
                                 </Grid.ColumnDefinitions>
                                 <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="5">
-                                    <Label Content="Id" Width="80"/>
-                                    <TextBox x:Name="txtProductId" Width="130"/>
+                                    <Label Content="Id" Width="60"/>
+                                    <TextBox x:Name="txtProductId" Width="120"/>
                                 </StackPanel>
                                 <StackPanel  Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="5">
-                                    <Label Content="Name" Width="80"/>
-                                    <TextBox x:Name="txtProductName" Width="130"/>
+                                    <Label Content="Name" Width="60"/>
+                                    <TextBox x:Name="txtProductName" Width="120"/>
                                 </StackPanel>
                                 <StackPanel  Grid.Row="1" Grid.Column="0" Orientation="Horizontal"  Margin="5">
-                                    <Label Content="Quantity" Width="80"/>
-                                    <TextBox x:Name="txtQuantity" Width="130"/>
+                                    <Label Content="Quantity" Width="60"/>
+                                    <TextBox x:Name="txtQuantity" Width="120"/>
                                 </StackPanel>
                                 <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="5">
-                                    <Label Content="UnitPrice" Width="80"/>
-                                    <TextBox x:Name="txtUnitPrice" Width="130"/>
+                                    <Label Content="UnitPrice" Width="60"/>
+                                    <TextBox x:Name="txtUnitPrice" Width="120"/>
                                 </StackPanel>
                             </Grid>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -107,7 +107,7 @@
         <Grid Grid.Row="1">
             <StackPanel>
                 <GroupBox  Header="Orders">
-                    <DataGrid x:Name="dataGridOrders" AutoGenerateColumns="False"  CanUserAddRows="False" Height="170">
+                    <DataGrid x:Name="dataGridOrders" AutoGenerateColumns="False"  CanUserAddRows="False" Height="150">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="OrderId" Binding="{Binding OrderId}" Width="*"/>
                             <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate}" Width="*"/>
@@ -116,7 +116,6 @@
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                             <Button Content="Delete" Click="OrdersActionsClick" Tag="Delete"/>
-                                            <Button Content="Update" Click="OrdersActionsClick" Tag="Update"/>
                                             <Button Content="Details" Click="OrdersActionsClick" Tag="Detail" />
                                         </StackPanel>
                                     </DataTemplate>

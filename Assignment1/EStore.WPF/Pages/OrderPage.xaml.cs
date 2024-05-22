@@ -90,7 +90,6 @@ namespace EStore.WPF.Pages
             
             lableTotal.Content = $"Total: {total}$";
         }
-
         private bool DeleteOrder(Order? order)
         {
             int result = _repo.OrderRepository.Delete(order.OrderId);
